@@ -1,0 +1,189 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Configuration - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr</a>&nbsp;/&nbsp;<a href="./index.html">Configuration</a><br/>
+<br/>
+<h1>Configuration</h1>
+<code><span class="keyword">class </span><span class="identifier">Configuration</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/Configuration.kt#L36">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Configuration</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="debug.html">debug</a></h4>
+</td>
+<td>
+<p>Should debug mode be used?</p>
+<code><span class="keyword">var </span><span class="identifier">debug</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fullscreen.html">fullscreen</a></h4>
+</td>
+<td>
+<p>Should the window be made fullscreen?</p>
+<code><span class="keyword">var </span><span class="identifier">fullscreen</span><span class="symbol">: </span><a href="../-fullscreen/index.html"><span class="identifier">Fullscreen</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="headless.html">headless</a></h4>
+</td>
+<td>
+<p>Should the application be run in headless mode?</p>
+<code><span class="keyword">var </span><span class="identifier">headless</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="height.html">height</a></h4>
+</td>
+<td>
+<p>The preferred window height</p>
+<code><span class="keyword">var </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hide-cursor.html">hideCursor</a></h4>
+</td>
+<td>
+<p>Should the cursor be hidden?</p>
+<code><span class="keyword">var </span><span class="identifier">hideCursor</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hide-window-decorations.html">hideWindowDecorations</a></h4>
+</td>
+<td>
+<p>Should window decorations be hidden?</p>
+<code><span class="keyword">var </span><span class="identifier">hideWindowDecorations</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="maximum-height.html">maximumHeight</a></h4>
+</td>
+<td>
+<p>The maximum window height</p>
+<code><span class="keyword">var </span><span class="identifier">maximumHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="maximum-width.html">maximumWidth</a></h4>
+</td>
+<td>
+<p>The maximum window width</p>
+<code><span class="keyword">var </span><span class="identifier">maximumWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="minimum-height.html">minimumHeight</a></h4>
+</td>
+<td>
+<p>The minimum window height</p>
+<code><span class="keyword">var </span><span class="identifier">minimumHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="minimum-width.html">minimumWidth</a></h4>
+</td>
+<td>
+<p>The minimum window width</p>
+<code><span class="keyword">var </span><span class="identifier">minimumWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="multisample.html">multisample</a></h4>
+</td>
+<td>
+<p>Should the window render target use multisampling?</p>
+<code><span class="keyword">var </span><span class="identifier">multisample</span><span class="symbol">: </span><a href="../-window-multisample/index.html"><span class="identifier">WindowMultisample</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="position.html">position</a></h4>
+</td>
+<td>
+<p>The window position. The window will be placed in the center of the primary screen when set to null</p>
+<code><span class="keyword">var </span><span class="identifier">position</span><span class="symbol">: </span><a href="../../org.openrndr.math/-int-vector2/index.html"><span class="identifier">IntVector2</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="show-before-setup.html">showBeforeSetup</a></h4>
+</td>
+<td>
+<p>Should the window be made visible before calling setup?</p>
+<code><span class="keyword">var </span><span class="identifier">showBeforeSetup</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="title.html">title</a></h4>
+</td>
+<td>
+<p>The window title</p>
+<code><span class="keyword">var </span><span class="identifier">title</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="trace.html">trace</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">trace</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unfocus-behaviour.html">unfocusBehaviour</a></h4>
+</td>
+<td>
+<p>The window and drawing behaviour on window unfocus</p>
+<code><span class="keyword">var </span><span class="identifier">unfocusBehaviour</span><span class="symbol">: </span><a href="../-unfocus-behaviour/index.html"><span class="identifier">UnfocusBehaviour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vsync.html">vsync</a></h4>
+</td>
+<td>
+<p>Should the program wait for vertical retrace?</p>
+<code><span class="keyword">var </span><span class="identifier">vsync</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="width.html">width</a></h4>
+</td>
+<td>
+<p>The preferred window width</p>
+<code><span class="keyword">var </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="window-always-on-top.html">windowAlwaysOnTop</a></h4>
+</td>
+<td>
+<p>Should the window be always on top (floating)</p>
+<code><span class="keyword">var </span><span class="identifier">windowAlwaysOnTop</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="window-resizable.html">windowResizable</a></h4>
+</td>
+<td>
+<p>Should the created window be resizable?</p>
+<code><span class="keyword">var </span><span class="identifier">windowResizable</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

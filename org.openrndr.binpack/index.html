@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>org.openrndr.binpack - openrndr</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">openrndr</a>&nbsp;/&nbsp;<a href="./index.html">org.openrndr.binpack</a><br/>
+<br/>
+<h2>Package org.openrndr.binpack</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-centered-binary-splitter/index.html">CenteredBinarySplitter</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">CenteredBinarySplitter</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-splitter/index.html"><span class="identifier">Splitter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-center-orderer/index.html">CenterOrderer</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">CenterOrderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-orderer/index.html"><span class="identifier">Orderer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-clipper/index.html">Clipper</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Clipper</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-default-clipper/index.html">DefaultClipper</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DefaultClipper</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-clipper/index.html"><span class="identifier">Clipper</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-default-orderer/index.html">DefaultOrderer</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DefaultOrderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-orderer/index.html"><span class="identifier">Orderer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-default-splitter/index.html">DefaultSplitter</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DefaultSplitter</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-splitter/index.html"><span class="identifier">Splitter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-greedy-splitter/index.html">GreedySplitter</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GreedySplitter</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-splitter/index.html"><span class="identifier">Splitter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-int-packer/index.html">IntPacker</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">IntPacker</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-optimizing-orderer/index.html">OptimizingOrderer</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">OptimizingOrderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-orderer/index.html"><span class="identifier">Orderer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-orderer/index.html">Orderer</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Orderer</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-pack-node/index.html">PackNode</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PackNode</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-random-binary-splitter/index.html">RandomBinarySplitter</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RandomBinarySplitter</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-splitter/index.html"><span class="identifier">Splitter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-random-orderer/index.html">RandomOrderer</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RandomOrderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-orderer/index.html"><span class="identifier">Orderer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-splitter/index.html">Splitter</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Splitter</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="leaf-nodes.html">leafNodes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">leafNodes</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.binpack$leafNodes(org.openrndr.binpack.PackNode)/node">node</span><span class="symbol">:</span>&nbsp;<a href="-pack-node/index.html"><span class="identifier">PackNode</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="-pack-node/index.html"><span class="identifier">PackNode</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="prune.html">prune</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">prune</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.binpack$prune(org.openrndr.binpack.PackNode)/node">node</span><span class="symbol">:</span>&nbsp;<a href="-pack-node/index.html"><span class="identifier">PackNode</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

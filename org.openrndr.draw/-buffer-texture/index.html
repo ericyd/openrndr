@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BufferTexture - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">BufferTexture</a><br/>
+<br/>
+<h1>BufferTexture</h1>
+<code><span class="keyword">interface </span><span class="identifier">BufferTexture</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/BufferTexture.kt#L15">(source)</a>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="element-count.html">elementCount</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">elementCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="format.html">format</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">format</span><span class="symbol">: </span><a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="session.html">session</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">session</span><span class="symbol">: </span><a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shadow.html">shadow</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">shadow</span><span class="symbol">: </span><a href="../-buffer-texture-shadow/index.html"><span class="identifier">BufferTextureShadow</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="../-color-type/index.html"><span class="identifier">ColorType</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="bind.html">bind</a></h4>
+</td>
+<td>
+<p>bind the BufferTexture to a texture unit</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.BufferTexture$bind(kotlin.Int)/unit">unit</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="destroy.html">destroy</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put.html">put</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">put</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.BufferTexture$put(kotlin.Function1((org.openrndr.draw.BufferWriter, kotlin.Unit)))/putter">putter</span><span class="symbol">:</span>&nbsp;<a href="../-buffer-writer/index.html"><span class="identifier">BufferWriter</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read.html">read</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">read</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.BufferTexture$read(java.nio.ByteBuffer, kotlin.Int, kotlin.Int)/target">target</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.BufferTexture$read(java.nio.ByteBuffer, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.BufferTexture$read(java.nio.ByteBuffer, kotlin.Int, kotlin.Int)/elementReadCount">elementReadCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.elementCount<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="save-to-file.html">saveToFile</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">saveToFile</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.BufferTexture$saveToFile(java.io.File, org.openrndr.draw.BufferTextureFileFormat)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.BufferTexture$saveToFile(java.io.File, org.openrndr.draw.BufferTextureFileFormat)/fileFormat">fileFormat</span><span class="symbol">:</span>&nbsp;<a href="../-buffer-texture-file-format/index.html"><span class="identifier">BufferTextureFileFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;BufferTextureFileFormat.ORB<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="write.html">write</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.BufferTexture$write(java.nio.ByteBuffer, kotlin.Int, kotlin.Int)/source">source</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.BufferTexture$write(java.nio.ByteBuffer, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.BufferTexture$write(java.nio.ByteBuffer, kotlin.Int, kotlin.Int)/elementWriteCount">elementWriteCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.elementCount<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="create.html">create</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.BufferTexture.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, org.openrndr.draw.Session)/elementCount">elementCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.BufferTexture.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, org.openrndr.draw.Session)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.BufferTexture.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, org.openrndr.draw.Session)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.FLOAT32<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.BufferTexture.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;Session.active<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">BufferTexture</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../image-binding.html">imageBinding</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">BufferTexture</span></a><span class="symbol">.</span><span class="identifier">imageBinding</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$imageBinding(org.openrndr.draw.BufferTexture, org.openrndr.draw.ImageAccess)/imageAccess">imageAccess</span><span class="symbol">:</span>&nbsp;<a href="../-image-access/index.html"><span class="identifier">ImageAccess</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-buffer-texture-image-binding/index.html"><span class="identifier">BufferTextureImageBinding</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

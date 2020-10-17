@@ -1,0 +1,171 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OrientedRectangle - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.shape</a>&nbsp;/&nbsp;<a href="./index.html">OrientedRectangle</a><br/>
+<br/>
+<h1>OrientedRectangle</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">OrientedRectangle</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/shape/OrientedRectangle.kt#L10">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">OrientedRectangle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">OrientedRectangle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$<init>(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double, kotlin.Double)/corner">corner</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$<init>(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double, kotlin.Double)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$<init>(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double, kotlin.Double)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$<init>(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double, kotlin.Double)/rotation">rotation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="area.html">area</a></h4>
+</td>
+<td>
+<p>the unitless area covered by this rectangle</p>
+<code><span class="keyword">val </span><span class="identifier">area</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="center.html">center</a></h4>
+</td>
+<td>
+<p>the center of the rectangle</p>
+<code><span class="keyword">val </span><span class="identifier">center</span><span class="symbol">: </span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contour.html">contour</a></h4>
+</td>
+<td>
+<p><a href="../-shape-contour/index.html">ShapeContour</a> representation of the rectangle</p>
+<code><span class="keyword">val </span><span class="identifier">contour</span><span class="symbol">: </span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="corner.html">corner</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">corner</span><span class="symbol">: </span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dimensions.html">dimensions</a></h4>
+</td>
+<td>
+<p>the dimensions of the rectangle</p>
+<code><span class="keyword">val </span><span class="identifier">dimensions</span><span class="symbol">: </span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="height.html">height</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="rotation.html">rotation</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">rotation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shape.html">shape</a></h4>
+</td>
+<td>
+<p><a href="../-shape/index.html">Shape</a> representation of the rectangle</p>
+<code><span class="keyword">val </span><span class="identifier">shape</span><span class="symbol">: </span><a href="../-shape/index.html"><span class="identifier">Shape</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="width.html">width</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="x.html">x</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">x</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="y.html">y</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">y</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="height-scaled-to.html">heightScaledTo</a></h4>
+</td>
+<td>
+<p>creates a new <a href="../-rectangle/index.html">Rectangle</a> with height set to <a href="height-scaled-to.html#org.openrndr.shape.OrientedRectangle$heightScaledTo(kotlin.Double)/fitHeight">fitHeight</a> and width scaled proportionally</p>
+<code><span class="keyword">fun </span><span class="identifier">heightScaledTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$heightScaledTo(kotlin.Double)/fitHeight">fitHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="moved.html">moved</a></h4>
+</td>
+<td>
+<p>creates a new <a href="../-rectangle/index.html">Rectangle</a> with its position offset by <a href="moved.html#org.openrndr.shape.OrientedRectangle$moved(org.openrndr.math.Vector2)/offset">offset</a></p>
+<code><span class="keyword">fun </span><span class="identifier">moved</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$moved(org.openrndr.math.Vector2)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="position.html">position</a></h4>
+</td>
+<td>
+<p>returns a position for parameterized coordinates <a href="position.html#org.openrndr.shape.OrientedRectangle$position(kotlin.Double, kotlin.Double)/u">u</a> and <a href="position.html#org.openrndr.shape.OrientedRectangle$position(kotlin.Double, kotlin.Double)/v">v</a> between 0 and 1</p>
+<code><span class="keyword">fun </span><span class="identifier">position</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$position(kotlin.Double, kotlin.Double)/u">u</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$position(kotlin.Double, kotlin.Double)/v">v</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scaled.html">scaled</a></h4>
+</td>
+<td>
+<p>creates a new <a href="../-rectangle/index.html">Rectangle</a> with dimensions scaled by <a href="scaled.html#org.openrndr.shape.OrientedRectangle$scaled(kotlin.Double, kotlin.Double)/scale">scale</a> and <a href="scaled.html#org.openrndr.shape.OrientedRectangle$scaled(kotlin.Double, kotlin.Double)/scaleY">scaleY</a></p>
+<code><span class="keyword">fun </span><span class="identifier">scaled</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$scaled(kotlin.Double, kotlin.Double)/scale">scale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$scaled(kotlin.Double, kotlin.Double)/scaleY">scaleY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;scale<span class="symbol">)</span><span class="symbol">: </span><a href="../-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="width-scaled-to.html">widthScaledTo</a></h4>
+</td>
+<td>
+<p>creates a new <a href="../-rectangle/index.html">Rectangle</a> with width set to <a href="width-scaled-to.html#org.openrndr.shape.OrientedRectangle$widthScaledTo(kotlin.Double)/fitWidth">fitWidth</a> and height scaled proportionally</p>
+<code><span class="keyword">fun </span><span class="identifier">widthScaledTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.OrientedRectangle$widthScaledTo(kotlin.Double)/fitWidth">fitWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="from-center.html">fromCenter</a></h4>
+</td>
+<td>
+<p>creates a <a href="../-rectangle/index.html">Rectangle</a> around <a href="from-center.html#org.openrndr.shape.OrientedRectangle.Companion$fromCenter(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/center">center</a> with dimensions <a href="from-center.html#org.openrndr.shape.OrientedRectangle.Companion$fromCenter(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/width">width</a> and <a href="from-center.html#org.openrndr.shape.OrientedRectangle.Companion$fromCenter(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/height">height</a></p>
+<code><span class="keyword">fun </span><span class="identifier">fromCenter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.OrientedRectangle.Companion$fromCenter(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/center">center</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle.Companion$fromCenter(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.OrientedRectangle.Companion$fromCenter(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>VolumeTexture - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">VolumeTexture</a><br/>
+<br/>
+<h1>VolumeTexture</h1>
+<code><span class="keyword">interface </span><span class="identifier">VolumeTexture</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/VolumeTexture.kt#L7">(source)</a>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="depth.html">depth</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">depth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="format.html">format</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">format</span><span class="symbol">: </span><a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="height.html">height</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="levels.html">levels</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">levels</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="session.html">session</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">session</span><span class="symbol">: </span><a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="../-color-type/index.html"><span class="identifier">ColorType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="width.html">width</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="bind.html">bind</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.VolumeTexture$bind(kotlin.Int)/textureUnit">textureUnit</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="copy-to.html">copyTo</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">copyTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.VolumeTexture$copyTo(org.openrndr.draw.ColorBuffer, kotlin.Int, kotlin.Int, kotlin.Int)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$copyTo(org.openrndr.draw.ColorBuffer, kotlin.Int, kotlin.Int, kotlin.Int)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$copyTo(org.openrndr.draw.ColorBuffer, kotlin.Int, kotlin.Int, kotlin.Int)/fromLevel">fromLevel</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$copyTo(org.openrndr.draw.ColorBuffer, kotlin.Int, kotlin.Int, kotlin.Int)/toLevel">toLevel</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="destroy.html">destroy</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fill.html">fill</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">fill</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.VolumeTexture$fill(org.openrndr.color.ColorRGBa)/color">color</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="filter.html">filter</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">filter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.VolumeTexture$filter(org.openrndr.draw.MinifyingFilter, org.openrndr.draw.MagnifyingFilter)/min">min</span><span class="symbol">:</span>&nbsp;<a href="../-minifying-filter/index.html"><span class="identifier">MinifyingFilter</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$filter(org.openrndr.draw.MinifyingFilter, org.openrndr.draw.MagnifyingFilter)/mag">mag</span><span class="symbol">:</span>&nbsp;<a href="../-magnifying-filter/index.html"><span class="identifier">MagnifyingFilter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="generate-mipmaps.html">generateMipmaps</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">generateMipmaps</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read.html">read</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">read</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.VolumeTexture$read(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$read(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/target">target</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$read(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/targetFormat">targetFormat</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;format<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$read(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/targetType">targetType</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;type<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$read(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="write.html">write</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.VolumeTexture$write(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$write(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/source">source</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$write(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/sourceFormat">sourceFormat</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;format<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$write(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/sourceType">sourceType</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;type<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture$write(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="create.html">create</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.VolumeTexture.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int, org.openrndr.draw.Session)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int, org.openrndr.draw.Session)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int, org.openrndr.draw.Session)/depth">depth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int, org.openrndr.draw.Session)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int, org.openrndr.draw.Session)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.UINT8<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int, org.openrndr.draw.Session)/levels">levels</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.VolumeTexture.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int, org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;Session.active<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">VolumeTexture</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../image-binding.html">imageBinding</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">VolumeTexture</span></a><span class="symbol">.</span><span class="identifier">imageBinding</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$imageBinding(org.openrndr.draw.VolumeTexture, kotlin.Int, org.openrndr.draw.ImageAccess)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$imageBinding(org.openrndr.draw.VolumeTexture, kotlin.Int, org.openrndr.draw.ImageAccess)/imageAccess">imageAccess</span><span class="symbol">:</span>&nbsp;<a href="../-image-access/index.html"><span class="identifier">ImageAccess</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-volume-texture-image-binding/index.html"><span class="identifier">VolumeTextureImageBinding</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

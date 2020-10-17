@@ -1,0 +1,204 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Shape - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.shape</a>&nbsp;/&nbsp;<a href="./index.html">Shape</a><br/>
+<br/>
+<h1>Shape</h1>
+<code><span class="keyword">class </span><span class="identifier">Shape</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/shape/Shape.kt#L1363">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Shape</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$<init>(kotlin.collections.List((org.openrndr.shape.ShapeContour)))/contours">contours</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="area.html">area</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">area</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="bounds.html">bounds</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">bounds</span><span class="symbol">: </span><a href="../-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="closed-contours.html">closedContours</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">closedContours</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="compound.html">compound</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">compound</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contours.html">contours</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">contours</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="empty.html">empty</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">empty</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="linear.html">linear</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">linear</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="open-contours.html">openContours</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">openContours</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="outline.html">outline</a></h4>
+</td>
+<td>
+<p>The outline of the shape</p>
+<code><span class="keyword">val </span><span class="identifier">outline</span><span class="symbol">: </span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="topology.html">topology</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">topology</span><span class="symbol">: </span><a href="../-shape-topology/index.html"><span class="identifier">ShapeTopology</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="triangulation.html">triangulation</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">triangulation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-triangle/index.html"><span class="identifier">Triangle</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="contains.html">contains</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$contains(org.openrndr.math.Vector2)/v">v</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="equals.html">equals</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hash-code.html">hashCode</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hole.html">hole</a></h4>
+</td>
+<td>
+<p>The indexed hole of the shape</p>
+<code><span class="keyword">fun </span><span class="identifier">hole</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$hole(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="map.html">map</a></h4>
+</td>
+<td>
+<p>Apply a map to the shape. Maps every contour.</p>
+<code><span class="keyword">fun </span><span class="identifier">map</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$map(kotlin.Function1((org.openrndr.shape.ShapeContour, )))/mapper">mapper</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Shape</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="polygon.html">polygon</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">polygon</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$polygon(kotlin.Double)/distanceTolerance">distanceTolerance</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.5<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Shape</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="random-points.html">randomPoints</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">randomPoints</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$randomPoints(kotlin.Int, kotlin.random.Random)/pointCount">pointCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Shape$randomPoints(kotlin.Int, kotlin.random.Random)/random">random</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.random/-random/index.html"><span class="identifier">Random</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Random.Default<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="split-compounds.html">splitCompounds</a></h4>
+</td>
+<td>
+<p>Splits a compound shape into separate shapes.</p>
+<code><span class="keyword">fun </span><span class="identifier">splitCompounds</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$splitCompounds(org.openrndr.shape.Winding)/winding">winding</span><span class="symbol">:</span>&nbsp;<a href="../-winding/index.html"><span class="identifier">Winding</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Winding.CLOCKWISE<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">Shape</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="transform.html">transform</a></h4>
+</td>
+<td>
+<p>Apply a tranform to the shape</p>
+<code><span class="keyword">fun </span><span class="identifier">transform</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$transform(org.openrndr.math.Matrix44)/transform">transform</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Shape</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-e-m-p-t-y.html">EMPTY</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">EMPTY</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Shape</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="compound.html">compound</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">compound</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape.Companion$compound(kotlin.collections.List((org.openrndr.shape.Shape)))/shapes">shapes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">Shape</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Shape</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CatmulRom1 - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.math</a>&nbsp;/&nbsp;<a href="./index.html">CatmulRom1</a><br/>
+<br/>
+<h1>CatmulRom1</h1>
+<code><span class="keyword">class </span><span class="identifier">CatmulRom1</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-math/src/main/kotlin/org/openrndr/math/CatmullRom.kt#L12">(source)</a>
+<p>1D Catmull-Rom segment</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>1D Catmull-Rom segment</p>
+<code><span class="identifier">CatmulRom1</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.CatmulRom1$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.CatmulRom1$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/p1">p1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.CatmulRom1$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/p2">p2</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.CatmulRom1$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/p3">p3</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.CatmulRom1$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/alpha">alpha</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.5<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="alpha.html">alpha</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">alpha</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="p0.html">p0</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">p0</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="p1.html">p1</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">p1</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="p2.html">p2</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">p2</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="p3.html">p3</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">p3</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="t0.html">t0</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">t0</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="t1.html">t1</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">t1</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="t2.html">t2</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">t2</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="t3.html">t3</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">t3</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="position.html">position</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">position</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.CatmulRom1$position(kotlin.Double)/rt">rt</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

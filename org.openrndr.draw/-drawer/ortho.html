@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Drawer.ortho - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="index.html">Drawer</a>&nbsp;/&nbsp;<a href="./ortho.html">ortho</a><br/>
+<br/>
+<h1>ortho</h1>
+<a name="org.openrndr.draw.Drawer$ortho(org.openrndr.draw.RenderTarget)"></a>
+<code><span class="keyword">fun </span><span class="identifier">ortho</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(org.openrndr.draw.RenderTarget)/renderTarget">renderTarget</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/Drawer.kt#L179">(source)</a>
+<p>Sets the <a href="projection.html">projection</a> matrix to orthogonal using the sizes of a <a href="../-render-target/index.html">RenderTarget</a></p>
+<h3>Parameters</h3>
+<p><a name="renderTarget"></a>
+<code>renderTarget</code> - the render target to take the sizes from</p>
+<a name="org.openrndr.draw.Drawer$ortho()"></a>
+<code><span class="keyword">fun </span><span class="identifier">ortho</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/Drawer.kt#L186">(source)</a>
+<p>Sets the <a href="projection.html">projection</a> matrix to orthogonal using the drawer's current size</p>
+<a name="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)"></a>
+<code><span class="keyword">fun </span><span class="identifier">ortho</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/left">left</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/right">right</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/bottom">bottom</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/top">top</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/near">near</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/far">far</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/Drawer.kt#L200">(source)</a>
+<p>Sets the <a href="projection.html">projection</a> matrix to orthogonal using <a href="ortho.html#org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/left">left</a>, <a href="ortho.html#org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/right">right</a>, <a href="ortho.html#org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/bottom">bottom</a>, <a href="ortho.html#org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/top">top</a>, <a href="ortho.html#org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/near">near</a>, <a href="ortho.html#org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/far">far</a></p>
+<h3>Parameters</h3>
+<p><a name="left"></a>
+<code>left</code> - left value</p>
+<p><a name="right"></a>
+<code>right</code> - right value</p>
+<p><a name="bottom"></a>
+<code>bottom</code> - bottom value</p>
+<p><a name="top"></a>
+<code>top</code> - top value</p>
+<p><a name="near"></a>
+<code>near</code> - near value</p>
+<p><a name="far"></a>
+<code>far</code> - far value</p>
+<p><strong>See Also</strong><br/>
+<p><a href="perspective.html">perspective</a></p>
+</p>
+</BODY>
+</HTML>

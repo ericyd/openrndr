@@ -1,0 +1,115 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Mouse - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr</a>&nbsp;/&nbsp;<a href="./index.html">Mouse</a><br/>
+<br/>
+<h1>Mouse</h1>
+<code><span class="keyword">class </span><span class="identifier">Mouse</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/Mouse.kt#L16">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Mouse</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.Mouse$<init>(kotlin.Function0((org.openrndr.Application)))/application">application</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-application/index.html"><span class="identifier">Application</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="application.html">application</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">application</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-application/index.html"><span class="identifier">Application</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="button-down.html">buttonDown</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">buttonDown</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-mouse-event/index.html"><span class="identifier">MouseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="button-up.html">buttonUp</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">buttonUp</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-mouse-event/index.html"><span class="identifier">MouseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clicked.html">clicked</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">clicked</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-mouse-event/index.html"><span class="identifier">MouseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cursor-visible.html">cursorVisible</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">cursorVisible</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dragged.html">dragged</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">dragged</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-mouse-event/index.html"><span class="identifier">MouseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="entered.html">entered</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">entered</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-mouse-event/index.html"><span class="identifier">MouseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="exited.html">exited</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">exited</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-mouse-event/index.html"><span class="identifier">MouseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="moved.html">moved</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">moved</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-mouse-event/index.html"><span class="identifier">MouseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="position.html">position</a></h4>
+</td>
+<td>
+<p>The current mouse position</p>
+<code><span class="keyword">var </span><span class="identifier">position</span><span class="symbol">: </span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pressed-buttons.html">pressedButtons</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">pressedButtons</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html"><span class="identifier">MutableSet</span></a><span class="symbol">&lt;</span><a href="../-mouse-button/index.html"><span class="identifier">MouseButton</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scrolled.html">scrolled</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">scrolled</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-mouse-event/index.html"><span class="identifier">MouseEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

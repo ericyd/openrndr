@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Animatable.complete - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.animatable</a>&nbsp;/&nbsp;<a href="index.html">Animatable</a>&nbsp;/&nbsp;<a href="./complete.html">complete</a><br/>
+<br/>
+<h1>complete</h1>
+<a name="org.openrndr.animatable.Animatable$complete(kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="identifier">complete</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.animatable.Animatable$complete(kotlin.String)/variable">variable</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-animatable/src/main/kotlin/org/openrndr/animatable/Animatable.kt#L222">(source)</a><a name="org.openrndr.animatable.Animatable$complete(kotlin.Function1((org.openrndr.animatable.Animatable, kotlin.Unit)))"></a>
+<code><span class="keyword">fun </span><span class="identifier">complete</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.animatable.Animatable$complete(kotlin.Function1((org.openrndr.animatable.Animatable, kotlin.Unit)))/callback">callback</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="index.html"><span class="identifier">Animatable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-animatable/src/main/kotlin/org/openrndr/animatable/Animatable.kt#L250">(source)</a>
+<p>Wait for the last cued animation to complete before starting the next animation and install
+a completion call back that is called when the last queued animation ends.</p>
+<p>Example usage:</p>
+<h3>Parameters</h3>
+<p><a name="callback"></a>
+<code>callback</code> - the callback to call when the animation is completed</p>
+<p><strong>Return</strong><br/>
+<code>this</code> for easy animation chaining</p>
+<a name="org.openrndr.animatable.Animatable$complete(org.openrndr.animatable.Animatable)"></a>
+<code><span class="keyword">fun </span><span class="identifier">complete</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.animatable.Animatable$complete(org.openrndr.animatable.Animatable)/animatable">animatable</span><span class="symbol">:</span>&nbsp;<a href="index.html"><span class="identifier">Animatable</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-animatable/src/main/kotlin/org/openrndr/animatable/Animatable.kt#L309">(source)</a>
+<p>Wait for the last cued animation in the given animatable to complete before starting the next animation.</p>
+<h3>Parameters</h3>
+<p><a name="animatable"></a>
+<code>animatable</code> - the animatable to wait for</p>
+<p><strong>Return</strong><br/>
+<code>this</code> for easy animation chaining</p>
+<a name="org.openrndr.animatable.Animatable$complete(org.openrndr.animatable.Animatable, kotlin.Function1((org.openrndr.animatable.Animatable, kotlin.Unit)))"></a>
+<code><span class="keyword">fun </span><span class="identifier">complete</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.animatable.Animatable$complete(org.openrndr.animatable.Animatable, kotlin.Function1((org.openrndr.animatable.Animatable, kotlin.Unit)))/animatable">animatable</span><span class="symbol">:</span>&nbsp;<a href="index.html"><span class="identifier">Animatable</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this<span class="symbol">, </span><span class="identifier" id="org.openrndr.animatable.Animatable$complete(org.openrndr.animatable.Animatable, kotlin.Function1((org.openrndr.animatable.Animatable, kotlin.Unit)))/callback">callback</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">(</span><a href="index.html"><span class="identifier">Animatable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-animatable/src/main/kotlin/org/openrndr/animatable/Animatable.kt#L323">(source)</a>
+<p>Wait for the animation to complete in the given animatable to complete before starting the next animation and install
+a completion call back that is called when the last queued animation ends.</p>
+<h3>Parameters</h3>
+<p><a name="animatable"></a>
+<code>animatable</code> - the animatable to wait for</p>
+<p><a name="callback"></a>
+<code>callback</code> - the callback to call when the animation is completed</p>
+<p><strong>Return</strong><br/>
+<code>this</code> for easy animation chaining</p>
+</BODY>
+</HTML>

@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StencilStyle - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">StencilStyle</a><br/>
+<br/>
+<h1>StencilStyle</h1>
+<code><span class="keyword">class </span><span class="identifier">StencilStyle</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/DrawStyle.kt#L136">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">StencilStyle</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="depth-fail-operation.html">depthFailOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">depthFailOperation</span><span class="symbol">: </span><a href="../-stencil-operation/index.html"><span class="identifier">StencilOperation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="depth-pass-operation.html">depthPassOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">depthPassOperation</span><span class="symbol">: </span><a href="../-stencil-operation/index.html"><span class="identifier">StencilOperation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stencil-fail-operation.html">stencilFailOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stencilFailOperation</span><span class="symbol">: </span><a href="../-stencil-operation/index.html"><span class="identifier">StencilOperation</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stencil-test.html">stencilTest</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stencilTest</span><span class="symbol">: </span><a href="../-stencil-test/index.html"><span class="identifier">StencilTest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stencil-test-mask.html">stencilTestMask</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stencilTestMask</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stencil-test-reference.html">stencilTestReference</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stencilTestReference</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stencil-write-mask.html">stencilWriteMask</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stencilWriteMask</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="stencil-func.html">stencilFunc</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stencilFunc</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.StencilStyle$stencilFunc(org.openrndr.draw.StencilTest, kotlin.Int, kotlin.Int)/stencilTest">stencilTest</span><span class="symbol">:</span>&nbsp;<a href="../-stencil-test/index.html"><span class="identifier">StencilTest</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.StencilStyle$stencilFunc(org.openrndr.draw.StencilTest, kotlin.Int, kotlin.Int)/testReference">testReference</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.StencilStyle$stencilFunc(org.openrndr.draw.StencilTest, kotlin.Int, kotlin.Int)/writeMask">writeMask</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stencil-op.html">stencilOp</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stencilOp</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.StencilStyle$stencilOp(org.openrndr.draw.StencilOperation, org.openrndr.draw.StencilOperation, org.openrndr.draw.StencilOperation)/onStencilTestFail">onStencilTestFail</span><span class="symbol">:</span>&nbsp;<a href="../-stencil-operation/index.html"><span class="identifier">StencilOperation</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.StencilStyle$stencilOp(org.openrndr.draw.StencilOperation, org.openrndr.draw.StencilOperation, org.openrndr.draw.StencilOperation)/onDepthTestFail">onDepthTestFail</span><span class="symbol">:</span>&nbsp;<a href="../-stencil-operation/index.html"><span class="identifier">StencilOperation</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.StencilStyle$stencilOp(org.openrndr.draw.StencilOperation, org.openrndr.draw.StencilOperation, org.openrndr.draw.StencilOperation)/onDepthTestPass">onDepthTestPass</span><span class="symbol">:</span>&nbsp;<a href="../-stencil-operation/index.html"><span class="identifier">StencilOperation</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

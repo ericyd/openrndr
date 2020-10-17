@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Session - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">Session</a><br/>
+<br/>
+<h1>Session</h1>
+<code><span class="keyword">class </span><span class="identifier">Session</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/Session.kt#L33">(source)</a>
+<p>Session</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Session</p>
+<code><span class="identifier">Session</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$<init>(org.openrndr.draw.Session)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Session</span></a><span class="symbol">?</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="context.html">context</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">context</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parent.html">parent</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">parent</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Session</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="statistics.html">statistics</a></h4>
+</td>
+<td>
+<p>Session statistics</p>
+<code><span class="keyword">val </span><span class="identifier">statistics</span><span class="symbol">: </span><a href="../-session-statistics/index.html"><span class="identifier">SessionStatistics</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="end.html">end</a></h4>
+</td>
+<td>
+<p>Ends the session, destroys any GPU resources in use by the session</p>
+<code><span class="keyword">fun </span><span class="identifier">end</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fork.html">fork</a></h4>
+</td>
+<td>
+<p>Fork the session</p>
+<code><span class="keyword">fun </span><span class="identifier">fork</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Session</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="track.html">track</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.RenderTarget)/renderTarget">renderTarget</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.ColorBuffer)/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.DepthBuffer)/depthBuffer">depthBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-depth-buffer/index.html"><span class="identifier">DepthBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.VertexBuffer)/vertexBuffer">vertexBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.IndexBuffer)/indexBuffer">indexBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-index-buffer/index.html"><span class="identifier">IndexBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.Shader)/shader">shader</span><span class="symbol">:</span>&nbsp;<a href="../-shader/index.html"><span class="identifier">Shader</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.ComputeShader)/computeShader">computeShader</span><span class="symbol">:</span>&nbsp;<a href="../-compute-shader/index.html"><span class="identifier">ComputeShader</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.Cubemap)/cubemap">cubemap</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap/index.html"><span class="identifier">Cubemap</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.BufferTexture)/bufferTexture">bufferTexture</span><span class="symbol">:</span>&nbsp;<a href="../-buffer-texture/index.html"><span class="identifier">BufferTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.ArrayTexture)/arrayTexture">arrayTexture</span><span class="symbol">:</span>&nbsp;<a href="../-array-texture/index.html"><span class="identifier">ArrayTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.AtomicCounterBuffer)/atomicCounterBuffer">atomicCounterBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-atomic-counter-buffer/index.html"><span class="identifier">AtomicCounterBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.ArrayCubemap)/arrayCubemap">arrayCubemap</span><span class="symbol">:</span>&nbsp;<a href="../-array-cubemap/index.html"><span class="identifier">ArrayCubemap</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.VolumeTexture)/volumeTexture">volumeTexture</span><span class="symbol">:</span>&nbsp;<a href="../-volume-texture/index.html"><span class="identifier">VolumeTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">track</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$track(org.openrndr.draw.ShaderStorageBuffer)/shaderStorageBuffer">shaderStorageBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-shader-storage-buffer/index.html"><span class="identifier">ShaderStorageBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="untrack.html">untrack</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.RenderTarget)/renderTarget">renderTarget</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.ColorBuffer)/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.DepthBuffer)/depthBuffer">depthBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-depth-buffer/index.html"><span class="identifier">DepthBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.VertexBuffer)/vertexBuffer">vertexBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.IndexBuffer)/indexBuffer">indexBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-index-buffer/index.html"><span class="identifier">IndexBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.Shader)/shader">shader</span><span class="symbol">:</span>&nbsp;<a href="../-shader/index.html"><span class="identifier">Shader</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.ComputeShader)/computeShader">computeShader</span><span class="symbol">:</span>&nbsp;<a href="../-compute-shader/index.html"><span class="identifier">ComputeShader</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.Cubemap)/cubemap">cubemap</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap/index.html"><span class="identifier">Cubemap</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.BufferTexture)/bufferTexture">bufferTexture</span><span class="symbol">:</span>&nbsp;<a href="../-buffer-texture/index.html"><span class="identifier">BufferTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.ArrayTexture)/arrayTexture">arrayTexture</span><span class="symbol">:</span>&nbsp;<a href="../-array-texture/index.html"><span class="identifier">ArrayTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.AtomicCounterBuffer)/atomicCounterBuffer">atomicCounterBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-atomic-counter-buffer/index.html"><span class="identifier">AtomicCounterBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.ArrayCubemap)/arrayCubemap">arrayCubemap</span><span class="symbol">:</span>&nbsp;<a href="../-array-cubemap/index.html"><span class="identifier">ArrayCubemap</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.VolumeTexture)/volumeTexture">volumeTexture</span><span class="symbol">:</span>&nbsp;<a href="../-volume-texture/index.html"><span class="identifier">VolumeTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Session$untrack(org.openrndr.draw.ShaderStorageBuffer)/shaderStorageBuffer">shaderStorageBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-shader-storage-buffer/index.html"><span class="identifier">ShaderStorageBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="active.html">active</a></h4>
+</td>
+<td>
+<p>The active session (on the active context)</p>
+<code><span class="keyword">val </span><span class="identifier">active</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Session</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="root.html">root</a></h4>
+</td>
+<td>
+<p>The root session (on the active context)</p>
+<code><span class="keyword">val </span><span class="identifier">root</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Session</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stack.html">stack</a></h4>
+</td>
+<td>
+<p>The session stack (on the active context)</p>
+<code><span class="keyword">val </span><span class="identifier">stack</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Stack.html"><span class="identifier">Stack</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">Session</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="end-active.html">endActive</a></h4>
+</td>
+<td>
+<p>Ends the active session and pops it off the session stack (on the active context)</p>
+<code><span class="keyword">fun </span><span class="identifier">endActive</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

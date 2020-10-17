@@ -1,0 +1,205 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CompositionNode - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.shape</a>&nbsp;/&nbsp;<a href="./index.html">CompositionNode</a><br/>
+<br/>
+<h1>CompositionNode</h1>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">CompositionNode</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/shape/Composition.kt#L13">(source)</a>
+<p>Describes a node in a composition</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attributes.html">attributes</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">attributes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="bounds.html">bounds</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">bounds</span><span class="symbol">: </span><a href="../-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="effective-fill.html">effectiveFill</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">effectiveFill</span><span class="symbol">: </span><a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="effective-shade-style.html">effectiveShadeStyle</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">effectiveShadeStyle</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-shade-style/index.html"><span class="identifier">ShadeStyle</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="effective-stroke.html">effectiveStroke</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">effectiveStroke</span><span class="symbol">: </span><a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="effective-transform.html">effectiveTransform</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">effectiveTransform</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fill.html">fill</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fill</span><span class="symbol">: </span><a href="../-composition-color.html"><span class="identifier">CompositionColor</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="id.html">id</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parent.html">parent</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">parent</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shade-style.html">shadeStyle</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">shadeStyle</span><span class="symbol">: </span><a href="../-composition-shade-style.html"><span class="identifier">CompositionShadeStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stroke.html">stroke</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stroke</span><span class="symbol">: </span><a href="../-composition-color.html"><span class="identifier">CompositionColor</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stroke-weight.html">strokeWeight</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">strokeWeight</span><span class="symbol">: </span><a href="../-composition-stroke-weight.html"><span class="identifier">CompositionStrokeWeight</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="transform.html">transform</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">transform</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="user-data.html">userData</a></h4>
+</td>
+<td>
+<p>A map that stores user data</p>
+<code><span class="keyword">val </span><span class="identifier">userData</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../find-all.html">findAll</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">.</span><span class="identifier">findAll</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape$findAll(org.openrndr.shape.CompositionNode, kotlin.Function1((org.openrndr.shape.CompositionNode, kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../find-groups.html">findGroups</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">.</span><span class="identifier">findGroups</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-group-node/index.html"><span class="identifier">GroupNode</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../find-images.html">findImages</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">.</span><span class="identifier">findImages</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-image-node/index.html"><span class="identifier">ImageNode</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../find-shapes.html">findShapes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">.</span><span class="identifier">findShapes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-shape-node/index.html"><span class="identifier">ShapeNode</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../find-terminals.html">findTerminals</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">.</span><span class="identifier">findTerminals</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape$findTerminals(org.openrndr.shape.CompositionNode, kotlin.Function1((org.openrndr.shape.CompositionNode, kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../remove.html">remove</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">.</span><span class="identifier">remove</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../visit-all.html">visitAll</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">.</span><span class="identifier">visitAll</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape$visitAll(org.openrndr.shape.CompositionNode, kotlin.Function1((org.openrndr.shape.CompositionNode, kotlin.Unit)))/visitor">visitor</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CompositionNode</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-group-node/index.html">GroupNode</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GroupNode</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CompositionNode</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-image-node/index.html">ImageNode</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ImageNode</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CompositionNode</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-shape-node/index.html">ShapeNode</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ShapeNode</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CompositionNode</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-text-node/index.html">TextNode</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TextNode</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">CompositionNode</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

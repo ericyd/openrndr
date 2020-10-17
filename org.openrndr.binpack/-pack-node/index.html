@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PackNode - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.binpack</a>&nbsp;/&nbsp;<a href="./index.html">PackNode</a><br/>
+<br/>
+<h1>PackNode</h1>
+<code><span class="keyword">class </span><span class="identifier">PackNode</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/binpack/PackNode.kt#L8">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">PackNode</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.binpack.PackNode$<init>(org.openrndr.shape.IntRectangle, org.openrndr.binpack.PackNode)/area">area</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-int-rectangle/index.html"><span class="identifier">IntRectangle</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.binpack.PackNode$<init>(org.openrndr.shape.IntRectangle, org.openrndr.binpack.PackNode)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PackNode</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="area.html">area</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">area</span><span class="symbol">: </span><a href="../../org.openrndr.shape/-int-rectangle/index.html"><span class="identifier">IntRectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="children.html">children</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">children</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">PackNode</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="data.html">data</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">data</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="free-area.html">freeArea</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">freeArea</span><span class="symbol">: </span><a href="../../org.openrndr.math/-int-vector2/index.html"><span class="identifier">IntVector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parent.html">parent</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">parent</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PackNode</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="taken.html">taken</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">taken</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="has-taken-decendents.html">hasTakenDecendents</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasTakenDecendents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-leaf.html">isLeaf</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isLeaf</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="populate.html">populate</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">populate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.binpack.PackNode$populate(kotlin.Any)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

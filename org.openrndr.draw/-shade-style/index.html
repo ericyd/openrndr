@@ -1,0 +1,207 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ShadeStyle - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">ShadeStyle</a><br/>
+<br/>
+<h1>ShadeStyle</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ShadeStyle</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/ShadeStyle.kt#L31">(source)</a>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-parameter/index.html">Parameter</a></h4>
+</td>
+<td>
+<code><span class="keyword">inner</span> <span class="keyword">class </span><span class="identifier">Parameter</span><span class="symbol">&lt;</span><span class="identifier">R</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.properties/-read-write-property/index.html"><span class="identifier">ReadWriteProperty</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">ShadeStyle</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">R</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">ShadeStyle</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">ShadeStyle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$<init>(org.openrndr.draw.ShadeStyle)/other">other</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ShadeStyle</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attributes.html">attributes</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">attributes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="buffers.html">buffers</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">buffers</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="buffer-values.html">bufferValues</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">bufferValues</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dirty.html">dirty</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">dirty</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fragment-preamble.html">fragmentPreamble</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fragmentPreamble</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fragment-transform.html">fragmentTransform</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fragmentTransform</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="geometry-preamble.html">geometryPreamble</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">geometryPreamble</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="geometry-transform.html">geometryTransform</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">geometryTransform</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="outputs.html">outputs</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">outputs</span><span class="symbol">: </span><a href="../-observable-hashmap/index.html"><span class="identifier">ObservableHashmap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="../-shade-style-output/index.html"><span class="identifier">ShadeStyleOutput</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parameters.html">parameters</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">parameters</span><span class="symbol">: </span><a href="../-observable-hashmap/index.html"><span class="identifier">ObservableHashmap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parameter-values.html">parameterValues</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">parameterValues</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="suppress-default-output.html">suppressDefaultOutput</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">suppressDefaultOutput</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vertex-preamble.html">vertexPreamble</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">vertexPreamble</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vertex-transform.html">vertexTransform</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">vertexTransform</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attributes.html">attributes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">attributes</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$attributes(org.openrndr.draw.VertexBuffer)/attributesBuffer">attributesBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="buffer.html">buffer</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">buffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$buffer(kotlin.String, org.openrndr.draw.ShaderStorageBuffer)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$buffer(kotlin.String, org.openrndr.draw.ShaderStorageBuffer)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="../-shader-storage-buffer/index.html"><span class="identifier">ShaderStorageBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">buffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$buffer(kotlin.String, org.openrndr.draw.AtomicCounterBuffer)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$buffer(kotlin.String, org.openrndr.draw.AtomicCounterBuffer)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="../-atomic-counter-buffer/index.html"><span class="identifier">AtomicCounterBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="output.html">output</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">output</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$output(kotlin.String, org.openrndr.draw.ShadeStyleOutput)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$output(kotlin.String, org.openrndr.draw.ShadeStyleOutput)/output">output</span><span class="symbol">:</span>&nbsp;<a href="../-shade-style-output/index.html"><span class="identifier">ShadeStyleOutput</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parameter.html">parameter</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.Cubemap)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.Cubemap)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap/index.html"><span class="identifier">Cubemap</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Boolean)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Boolean)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Int)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Matrix33)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Matrix33)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-matrix33/index.html"><span class="identifier">Matrix33</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Matrix44)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Matrix44)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.math.Matrix44)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.math.Matrix44)))/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.math.Vector2)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.math.Vector2)))/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.math.Vector3)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.math.Vector3)))/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.math.Vector4)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.math.Vector4)))/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector4/index.html"><span class="identifier">Vector4</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.color.ColorRGBa)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Array((org.openrndr.color.ColorRGBa)))/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Float)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Float)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Double)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, kotlin.Double)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Vector2)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Vector2)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Vector3)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Vector3)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Vector4)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.Vector4)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector4/index.html"><span class="identifier">Vector4</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.IntVector2)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.IntVector2)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-int-vector2/index.html"><span class="identifier">IntVector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.IntVector3)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.IntVector3)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-int-vector3/index.html"><span class="identifier">IntVector3</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.IntVector4)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.math.IntVector4)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-int-vector4/index.html"><span class="identifier">IntVector4</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.color.ColorRGBa)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.color.ColorRGBa)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.ColorBuffer)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.ColorBuffer)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.DepthBuffer)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.DepthBuffer)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-depth-buffer/index.html"><span class="identifier">DepthBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.ArrayTexture)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.ArrayTexture)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-array-texture/index.html"><span class="identifier">ArrayTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.ArrayCubemap)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.ArrayCubemap)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-array-cubemap/index.html"><span class="identifier">ArrayCubemap</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.BufferTexture)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.BufferTexture)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-buffer-texture/index.html"><span class="identifier">BufferTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.VolumeTexture)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.VolumeTexture)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-volume-texture/index.html"><span class="identifier">VolumeTexture</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">parameter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.ImageBinding)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyle$parameter(kotlin.String, org.openrndr.draw.ImageBinding)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../-image-binding/index.html"><span class="identifier">ImageBinding</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="plus.html">plus</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyle$plus(org.openrndr.draw.ShadeStyle)/other">other</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ShadeStyle</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShadeStyle</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

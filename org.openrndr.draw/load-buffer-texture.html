@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>loadBufferTexture - openrndr</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">openrndr</a>&nbsp;/&nbsp;<a href="index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./load-buffer-texture.html">loadBufferTexture</a><br/>
+<br/>
+<h1>loadBufferTexture</h1>
+<a name="org.openrndr.draw$loadBufferTexture(kotlin.String, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)"></a>
+<code><span class="keyword">fun </span><span class="identifier">loadBufferTexture</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$loadBufferTexture(kotlin.String, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)/fileOrUrl">fileOrUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadBufferTexture(kotlin.String, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)/formatHint">formatHint</span><span class="symbol">:</span>&nbsp;<a href="-buffer-texture-file-format/index.html"><span class="identifier">BufferTextureFileFormat</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;BufferTextureFileFormat.ORB<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadBufferTexture(kotlin.String, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;Session.active<span class="symbol">)</span><span class="symbol">: </span><a href="-buffer-texture/index.html"><span class="identifier">BufferTexture</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/BufferTexture.kt#L78">(source)</a>
+<p>load a buffer texture from file or url</p>
+<h3>Parameters</h3>
+<p><a name="fileOrUrl"></a>
+<code>fileOrUrl</code> - filename or url</p>
+<p><a name="formatHint"></a>
+<code>formatHint</code> - a format hint for the loader</p>
+<p><a name="session"></a>
+<code>session</code> - the session to which the buffer texture will be registered</p>
+<a name="org.openrndr.draw$loadBufferTexture(java.io.File, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)"></a>
+<code><span class="keyword">fun </span><span class="identifier">loadBufferTexture</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$loadBufferTexture(java.io.File, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadBufferTexture(java.io.File, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)/formatHint">formatHint</span><span class="symbol">:</span>&nbsp;<a href="-buffer-texture-file-format/index.html"><span class="identifier">BufferTextureFileFormat</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;BufferTextureFileFormat.ORB<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadBufferTexture(java.io.File, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;Session.active<span class="symbol">)</span><span class="symbol">: </span><a href="-buffer-texture/index.html"><span class="identifier">BufferTexture</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/BufferTexture.kt#L97">(source)</a>
+<p>load a buffer texture from a file</p>
+<h3>Parameters</h3>
+<p><a name="file"></a>
+<code>file</code> - the file to load the buffer texture from</p>
+<p><a name="formatHint"></a>
+<code>formatHint</code> - a format hint for the loader</p>
+<p><a name="session"></a>
+<code>session</code> - the session to which the buffer texture will be registered</p>
+<a name="org.openrndr.draw$loadBufferTexture(java.net.URL, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)"></a>
+<code><span class="keyword">fun </span><span class="identifier">loadBufferTexture</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$loadBufferTexture(java.net.URL, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadBufferTexture(java.net.URL, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)/formatHint">formatHint</span><span class="symbol">:</span>&nbsp;<a href="-buffer-texture-file-format/index.html"><span class="identifier">BufferTextureFileFormat</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;BufferTextureFileFormat.ORB<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadBufferTexture(java.net.URL, org.openrndr.draw.BufferTextureFileFormat, org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;Session.active<span class="symbol">)</span><span class="symbol">: </span><a href="-buffer-texture/index.html"><span class="identifier">BufferTexture</span></a></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/BufferTexture.kt#L128">(source)</a>
+<p>load a BufferTexture from a url</p>
+<h3>Parameters</h3>
+<p><a name="url"></a>
+<code>url</code> - the url to load from</p>
+<p><a name="formatHint"></a>
+<code>formatHint</code> - a format hint for the loader</p>
+<p><a name="session"></a>
+<code>session</code> - the session the buffer texture will be created in</p>
+</BODY>
+</HTML>

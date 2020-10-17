@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Extension - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr</a>&nbsp;/&nbsp;<a href="./index.html">Extension</a><br/>
+<br/>
+<h1>Extension</h1>
+<code><span class="keyword">interface </span><span class="identifier">Extension</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/Extension.kt#L18">(source)</a>
+<p>Defines a Program extension. This is the interface for developers of OPENRNDR extensions.</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="enabled.html">enabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">var </span><span class="identifier">enabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="after-draw.html">afterDraw</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">afterDraw</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.Extension$afterDraw(org.openrndr.draw.Drawer, org.openrndr.Program)/drawer">drawer</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.Extension$afterDraw(org.openrndr.draw.Drawer, org.openrndr.Program)/program">program</span><span class="symbol">:</span>&nbsp;<a href="../-program/index.html"><span class="identifier">Program</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="before-draw.html">beforeDraw</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">beforeDraw</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.Extension$beforeDraw(org.openrndr.draw.Drawer, org.openrndr.Program)/drawer">drawer</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.Extension$beforeDraw(org.openrndr.draw.Drawer, org.openrndr.Program)/program">program</span><span class="symbol">:</span>&nbsp;<a href="../-program/index.html"><span class="identifier">Program</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="setup.html">setup</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setup</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.Extension$setup(org.openrndr.Program)/program">program</span><span class="symbol">:</span>&nbsp;<a href="../-program/index.html"><span class="identifier">Program</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shutdown.html">shutdown</a></h4>
+</td>
+<td>
+<p>Shutdown is called when the host application is quit</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">shutdown</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.Extension$shutdown(org.openrndr.Program)/program">program</span><span class="symbol">:</span>&nbsp;<a href="../-program/index.html"><span class="identifier">Program</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../org.openrndr.extensions/-screenshots/index.html">Screenshots</a></h4>
+</td>
+<td>
+<p>an extension that takes screenshots when <a href="../../org.openrndr.extensions/-screenshots/key.html">key</a> (default is spacebar) is pressed</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Screenshots</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Extension</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

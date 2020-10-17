@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Circle - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.shape</a>&nbsp;/&nbsp;<a href="./index.html">Circle</a><br/>
+<br/>
+<h1>Circle</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Circle</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/shape/Circle.kt#L10">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Circle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$<init>(kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Circle$<init>(kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Circle$<init>(kotlin.Double, kotlin.Double, kotlin.Double)/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">Circle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$<init>(org.openrndr.math.Vector2, kotlin.Double)/center">center</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Circle$<init>(org.openrndr.math.Vector2, kotlin.Double)/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="center.html">center</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">center</span><span class="symbol">: </span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contour.html">contour</a></h4>
+</td>
+<td>
+<p>creates <a href="../-shape-contour/index.html">ShapeContour</a> representation</p>
+<code><span class="keyword">val </span><span class="identifier">contour</span><span class="symbol">: </span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="radius.html">radius</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">radius</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shape.html">shape</a></h4>
+</td>
+<td>
+<p>creates <a href="../-shape/index.html">Shape</a> representation</p>
+<code><span class="keyword">val </span><span class="identifier">shape</span><span class="symbol">: </span><a href="../-shape/index.html"><span class="identifier">Shape</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="contains.html">contains</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$contains(org.openrndr.math.Vector2)/point">point</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="div.html">div</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">div</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$div(kotlin.Double)/scale">scale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="minus.html">minus</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">minus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$minus(org.openrndr.shape.Circle)/right">right</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Circle</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="moved.html">moved</a></h4>
+</td>
+<td>
+<p>creates new <a href="./index.html">Circle</a> with center offset by <a href="moved.html#org.openrndr.shape.Circle$moved(org.openrndr.math.Vector2)/offset">offset</a></p>
+<code><span class="keyword">fun </span><span class="identifier">moved</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$moved(org.openrndr.math.Vector2)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="moved-to.html">movedTo</a></h4>
+</td>
+<td>
+<p>creates new <a href="./index.html">Circle</a> with center at <a href="moved-to.html#org.openrndr.shape.Circle$movedTo(org.openrndr.math.Vector2)/position">position</a></p>
+<code><span class="keyword">fun </span><span class="identifier">movedTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$movedTo(org.openrndr.math.Vector2)/position">position</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="plus.html">plus</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$plus(org.openrndr.shape.Circle)/right">right</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Circle</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scaled.html">scaled</a></h4>
+</td>
+<td>
+<p>creates new <a href="./index.html">Circle</a> with radius scaled by <a href="scaled.html#org.openrndr.shape.Circle$scaled(kotlin.Double)/scale">scale</a></p>
+<code><span class="keyword">fun </span><span class="identifier">scaled</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$scaled(kotlin.Double)/scale">scale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scaled-to.html">scaledTo</a></h4>
+</td>
+<td>
+<p>creates new <a href="./index.html">Circle</a> with radius set to <a href="scaled-to.html#org.openrndr.shape.Circle$scaledTo(kotlin.Double)/fitRadius">fitRadius</a></p>
+<code><span class="keyword">fun </span><span class="identifier">scaledTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$scaledTo(kotlin.Double)/fitRadius">fitRadius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tangents.html">tangents</a></h4>
+</td>
+<td>
+<p>calculates the tangent lines between two circles
+by default it returns the outer tangents</p>
+<code><span class="keyword">fun </span><span class="identifier">tangents</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$tangents(org.openrndr.shape.Circle, kotlin.Boolean)/c">c</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Circle</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Circle$tangents(org.openrndr.shape.Circle, kotlin.Boolean)/isInner">isInner</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">,</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>calculates the tangent lines to an external point</p>
+<code><span class="keyword">fun </span><span class="identifier">tangents</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$tangents(org.openrndr.math.Vector2)/point">point</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">,</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="times.html">times</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">times</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle$times(kotlin.Double)/scale">scale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="from-points.html">fromPoints</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromPoints</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle.Companion$fromPoints(org.openrndr.math.Vector2, org.openrndr.math.Vector2)/a">a</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Circle.Companion$fromPoints(org.openrndr.math.Vector2, org.openrndr.math.Vector2)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">fromPoints</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Circle.Companion$fromPoints(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2)/a">a</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Circle.Companion$fromPoints(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2)/b">b</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Circle.Companion$fromPoints(org.openrndr.math.Vector2, org.openrndr.math.Vector2, org.openrndr.math.Vector2)/c">c</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Circle</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

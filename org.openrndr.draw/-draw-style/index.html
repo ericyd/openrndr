@@ -1,0 +1,193 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DrawStyle - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">DrawStyle</a><br/>
+<br/>
+<h1>DrawStyle</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DrawStyle</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/DrawStyle.kt#L340">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">DrawStyle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/clip">clip</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/fill">fill</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;ColorRGBa.WHITE<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/stroke">stroke</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;ColorRGBa.BLACK<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/lineCap">lineCap</span><span class="symbol">:</span>&nbsp;<a href="../-line-cap/index.html"><span class="identifier">LineCap</span></a>&nbsp;<span class="symbol">=</span>&nbsp;LineCap.BUTT<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/lineJoin">lineJoin</span><span class="symbol">:</span>&nbsp;<a href="../-line-join/index.html"><span class="identifier">LineJoin</span></a>&nbsp;<span class="symbol">=</span>&nbsp;LineJoin.MITER<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/strokeWeight">strokeWeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/smooth">smooth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/quality">quality</span><span class="symbol">:</span>&nbsp;<a href="../-draw-quality/index.html"><span class="identifier">DrawQuality</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DrawQuality.QUALITY<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/depthTestPass">depthTestPass</span><span class="symbol">:</span>&nbsp;<a href="../-depth-test-pass/index.html"><span class="identifier">DepthTestPass</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DepthTestPass.ALWAYS<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/depthWrite">depthWrite</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/blendMode">blendMode</span><span class="symbol">:</span>&nbsp;<a href="../-blend-mode/index.html"><span class="identifier">BlendMode</span></a>&nbsp;<span class="symbol">=</span>&nbsp;BlendMode.OVER<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/cullTestPass">cullTestPass</span><span class="symbol">:</span>&nbsp;<a href="../-cull-test-pass/index.html"><span class="identifier">CullTestPass</span></a>&nbsp;<span class="symbol">=</span>&nbsp;CullTestPass.ALWAYS<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/channelWriteMask">channelWriteMask</span><span class="symbol">:</span>&nbsp;<a href="../-channel-mask/index.html"><span class="identifier">ChannelMask</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ChannelMask(red = true, green = true, blue = true, alpha = true)<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/alphaToCoverage">alphaToCoverage</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/shadeStyle">shadeStyle</span><span class="symbol">:</span>&nbsp;<a href="../-shade-style/index.html"><span class="identifier">ShadeStyle</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/fontMap">fontMap</span><span class="symbol">:</span>&nbsp;<a href="../-font-map/index.html"><span class="identifier">FontMap</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/kerning">kerning</span><span class="symbol">:</span>&nbsp;<a href="../-kern-mode/index.html"><span class="identifier">KernMode</span></a>&nbsp;<span class="symbol">=</span>&nbsp;KernMode.METRIC<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/stencil">stencil</span><span class="symbol">:</span>&nbsp;<a href="../-stencil-style/index.html"><span class="identifier">StencilStyle</span></a>&nbsp;<span class="symbol">=</span>&nbsp;StencilStyle()<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/frontStencil">frontStencil</span><span class="symbol">:</span>&nbsp;<a href="../-stencil-style/index.html"><span class="identifier">StencilStyle</span></a>&nbsp;<span class="symbol">=</span>&nbsp;stencil<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/backStencil">backStencil</span><span class="symbol">:</span>&nbsp;<a href="../-stencil-style/index.html"><span class="identifier">StencilStyle</span></a>&nbsp;<span class="symbol">=</span>&nbsp;stencil<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DrawStyle$<init>(org.openrndr.shape.Rectangle, org.openrndr.color.ColorRGBa, org.openrndr.color.ColorRGBa, org.openrndr.draw.LineCap, org.openrndr.draw.LineJoin, kotlin.Double, kotlin.Boolean, org.openrndr.draw.DrawQuality, org.openrndr.draw.DepthTestPass, kotlin.Boolean, org.openrndr.draw.BlendMode, org.openrndr.draw.CullTestPass, org.openrndr.draw.ChannelMask, kotlin.Boolean, org.openrndr.draw.ShadeStyle, org.openrndr.draw.FontMap, org.openrndr.draw.KernMode, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.draw.StencilStyle, org.openrndr.math.Matrix55)/colorMatrix">colorMatrix</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-matrix55/index.html"><span class="identifier">Matrix55</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Matrix55.IDENTITY<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="alpha-to-coverage.html">alphaToCoverage</a></h4>
+</td>
+<td>
+<p>Use alpha to coverage in rendering, used in multi-sampling modes</p>
+<code><span class="keyword">var </span><span class="identifier">alphaToCoverage</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="back-stencil.html">backStencil</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">backStencil</span><span class="symbol">: </span><a href="../-stencil-style/index.html"><span class="identifier">StencilStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="blend-mode.html">blendMode</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">blendMode</span><span class="symbol">: </span><a href="../-blend-mode/index.html"><span class="identifier">BlendMode</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="channel-write-mask.html">channelWriteMask</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">channelWriteMask</span><span class="symbol">: </span><a href="../-channel-mask/index.html"><span class="identifier">ChannelMask</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clip.html">clip</a></h4>
+</td>
+<td>
+<p>Clipping rectangle, set to null for no clipping</p>
+<code><span class="keyword">var </span><span class="identifier">clip</span><span class="symbol">: </span><a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="color-matrix.html">colorMatrix</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">colorMatrix</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix55/index.html"><span class="identifier">Matrix55</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cull-test-pass.html">cullTestPass</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">cullTestPass</span><span class="symbol">: </span><a href="../-cull-test-pass/index.html"><span class="identifier">CullTestPass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="depth-test-pass.html">depthTestPass</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">depthTestPass</span><span class="symbol">: </span><a href="../-depth-test-pass/index.html"><span class="identifier">DepthTestPass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="depth-write.html">depthWrite</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">depthWrite</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fill.html">fill</a></h4>
+</td>
+<td>
+<p>Fill color, set to null for no fill</p>
+<code><span class="keyword">var </span><span class="identifier">fill</span><span class="symbol">: </span><a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="font-map.html">fontMap</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fontMap</span><span class="symbol">: </span><a href="../-font-map/index.html"><span class="identifier">FontMap</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="front-stencil.html">frontStencil</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">frontStencil</span><span class="symbol">: </span><a href="../-stencil-style/index.html"><span class="identifier">StencilStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="kerning.html">kerning</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">kerning</span><span class="symbol">: </span><a href="../-kern-mode/index.html"><span class="identifier">KernMode</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="line-cap.html">lineCap</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lineCap</span><span class="symbol">: </span><a href="../-line-cap/index.html"><span class="identifier">LineCap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="line-join.html">lineJoin</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lineJoin</span><span class="symbol">: </span><a href="../-line-join/index.html"><span class="identifier">LineJoin</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="quality.html">quality</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">quality</span><span class="symbol">: </span><a href="../-draw-quality/index.html"><span class="identifier">DrawQuality</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shade-style.html">shadeStyle</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">shadeStyle</span><span class="symbol">: </span><a href="../-shade-style/index.html"><span class="identifier">ShadeStyle</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="smooth.html">smooth</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">smooth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stencil.html">stencil</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stencil</span><span class="symbol">: </span><a href="../-stencil-style/index.html"><span class="identifier">StencilStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stroke.html">stroke</a></h4>
+</td>
+<td>
+<p>Stroke color, set to null for no stroke</p>
+<code><span class="keyword">var </span><span class="identifier">stroke</span><span class="symbol">: </span><a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stroke-weight.html">strokeWeight</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">strokeWeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="apply-to-shader.html">applyToShader</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">applyToShader</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.DrawStyle$applyToShader(org.openrndr.draw.Shader)/shader">shader</span><span class="symbol">:</span>&nbsp;<a href="../-shader/index.html"><span class="identifier">Shader</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

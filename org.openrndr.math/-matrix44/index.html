@@ -1,0 +1,345 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Matrix44 - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.math</a>&nbsp;/&nbsp;<a href="./index.html">Matrix44</a><br/>
+<br/>
+<h1>Matrix44</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Matrix44</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html"><span class="identifier">Serializable</span></a><span class="symbol">, </span><a href="../-linear-type/index.html"><span class="identifier">LinearType</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">Matrix44</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-math/src/main/kotlin/org/openrndr/math/Matrix44.kt#L8">(source)</a>
+<p>A 4x4 matrix with double precision</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>A 4x4 matrix with double precision</p>
+<code><span class="identifier">Matrix44</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c0r0">c0r0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c1r0">c1r0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c2r0">c2r0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c3r0">c3r0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c0r1">c0r1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c1r1">c1r1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c2r1">c2r1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c3r1">c3r1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c0r2">c0r2</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c1r2">c1r2</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c2r2">c2r2</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c3r2">c3r2</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c0r3">c0r3</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c1r3">c1r3</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c2r3">c2r3</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44$<init>(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/c3r3">c3r3</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="c0r0.html">c0r0</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c0r0</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c0r1.html">c0r1</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c0r1</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c0r2.html">c0r2</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c0r2</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c0r3.html">c0r3</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c0r3</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c1r0.html">c1r0</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c1r0</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c1r1.html">c1r1</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c1r1</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c1r2.html">c1r2</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c1r2</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c1r3.html">c1r3</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c1r3</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c2r0.html">c2r0</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c2r0</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c2r1.html">c2r1</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c2r1</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c2r2.html">c2r2</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c2r2</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c2r3.html">c2r3</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c2r3</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c3r0.html">c3r0</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c3r0</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c3r1.html">c3r1</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c3r1</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c3r2.html">c3r2</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c3r2</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="c3r3.html">c3r3</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">c3r3</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="determinant.html">determinant</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">determinant</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inversed.html">inversed</a></h4>
+</td>
+<td>
+<p>Inversed version of the 4x4 matrix</p>
+<code><span class="keyword">val </span><span class="identifier">inversed</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="matrix33.html">matrix33</a></h4>
+</td>
+<td>
+<p>The 3x3 top-left part of the 4x4 matrix</p>
+<code><span class="keyword">val </span><span class="identifier">matrix33</span><span class="symbol">: </span><a href="../-matrix33/index.html"><span class="identifier">Matrix33</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="trace.html">trace</a></h4>
+</td>
+<td>
+<p>The trace of the 4x4 matrix</p>
+<code><span class="keyword">val </span><span class="identifier">trace</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="transposed.html">transposed</a></h4>
+</td>
+<td>
+<p>Returns a transposed version of the matrix</p>
+<code><span class="keyword">val </span><span class="identifier">transposed</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="div.html">div</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">div</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44$div(kotlin.Double)/s">s</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<p>Returns a column vector</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44$get(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-vector4/index.html"><span class="identifier">Vector4</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="minus.html">minus</a></h4>
+</td>
+<td>
+<p>Matrix subtraction</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">minus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44$minus(org.openrndr.math.Matrix44)/o">o</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Matrix44</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="plus.html">plus</a></h4>
+</td>
+<td>
+<p>Matrix addition</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44$plus(org.openrndr.math.Matrix44)/o">o</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Matrix44</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="times.html">times</a></h4>
+</td>
+<td>
+<p>Multiplies the 4x4 matrix with a vector 4</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">times</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44$times(org.openrndr.math.Vector4)/v">v</span><span class="symbol">:</span>&nbsp;<a href="../-vector4/index.html"><span class="identifier">Vector4</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-vector4/index.html"><span class="identifier">Vector4</span></a></code>
+<p>Multiplies all the elements in the 4x4 matrix with a scalar</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">times</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44$times(kotlin.Double)/s">s</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code>
+<p>Matrix concatenation</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">times</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44$times(org.openrndr.math.Matrix44)/mat">mat</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Matrix44</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-double-array.html">toDoubleArray</a></h4>
+</td>
+<td>
+<p>Convert matrix to a <code>DoubleArray</code> in row-major order</p>
+<code><span class="keyword">fun </span><span class="identifier">toDoubleArray</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html"><span class="identifier">DoubleArray</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-i-d-e-n-t-i-t-y.html">IDENTITY</a></h4>
+</td>
+<td>
+<p>4x4 identity matrix</p>
+<code><span class="keyword">val </span><span class="identifier">IDENTITY</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-z-e-r-o.html">ZERO</a></h4>
+</td>
+<td>
+<p>4x4 zero matrix</p>
+<code><span class="keyword">val </span><span class="identifier">ZERO</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="from-column-vectors.html">fromColumnVectors</a></h4>
+</td>
+<td>
+<p>Create a 4x4 matrix from column vectors</p>
+<code><span class="keyword">fun </span><span class="identifier">fromColumnVectors</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44.Companion$fromColumnVectors(org.openrndr.math.Vector4, org.openrndr.math.Vector4, org.openrndr.math.Vector4, org.openrndr.math.Vector4)/c0">c0</span><span class="symbol">:</span>&nbsp;<a href="../-vector4/index.html"><span class="identifier">Vector4</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44.Companion$fromColumnVectors(org.openrndr.math.Vector4, org.openrndr.math.Vector4, org.openrndr.math.Vector4, org.openrndr.math.Vector4)/c1">c1</span><span class="symbol">:</span>&nbsp;<a href="../-vector4/index.html"><span class="identifier">Vector4</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44.Companion$fromColumnVectors(org.openrndr.math.Vector4, org.openrndr.math.Vector4, org.openrndr.math.Vector4, org.openrndr.math.Vector4)/c2">c2</span><span class="symbol">:</span>&nbsp;<a href="../-vector4/index.html"><span class="identifier">Vector4</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.Matrix44.Companion$fromColumnVectors(org.openrndr.math.Vector4, org.openrndr.math.Vector4, org.openrndr.math.Vector4, org.openrndr.math.Vector4)/c3">c3</span><span class="symbol">:</span>&nbsp;<a href="../-vector4/index.html"><span class="identifier">Vector4</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="from-double-array.html">fromDoubleArray</a></h4>
+</td>
+<td>
+<p>Construct matrix from <code>DoubleArray</code> with values in row-major order</p>
+<code><span class="keyword">fun </span><span class="identifier">fromDoubleArray</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.Matrix44.Companion$fromDoubleArray(kotlin.DoubleArray)/a">a</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html"><span class="identifier">DoubleArray</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../org.openrndr.math.transforms/rotate.html">rotate</a></h4>
+</td>
+<td>
+<p>Create a rotation matrix around the given axes</p>
+<code><span class="keyword">fun </span><span class="identifier">Matrix44.Companion</span><span class="symbol">.</span><span class="identifier">rotate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.transforms$rotate(org.openrndr.math.Matrix44.Companion, org.openrndr.math.Vector3, kotlin.Double)/axis">axis</span><span class="symbol">:</span>&nbsp;<a href="../-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.transforms$rotate(org.openrndr.math.Matrix44.Companion, org.openrndr.math.Vector3, kotlin.Double)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../org.openrndr.math.transforms/rotate-x.html">rotateX</a></h4>
+</td>
+<td>
+<p>Create a rotation matrix around the X axes</p>
+<code><span class="keyword">fun </span><span class="identifier">Matrix44.Companion</span><span class="symbol">.</span><span class="identifier">rotateX</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.transforms$rotateX(org.openrndr.math.Matrix44.Companion, kotlin.Double)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../org.openrndr.math.transforms/rotate-y.html">rotateY</a></h4>
+</td>
+<td>
+<p>Create a rotation matrix around the Y axes</p>
+<code><span class="keyword">fun </span><span class="identifier">Matrix44.Companion</span><span class="symbol">.</span><span class="identifier">rotateY</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.transforms$rotateY(org.openrndr.math.Matrix44.Companion, kotlin.Double)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../org.openrndr.math.transforms/rotate-z.html">rotateZ</a></h4>
+</td>
+<td>
+<p>Create a rotation matrix around the Z axes</p>
+<code><span class="keyword">fun </span><span class="identifier">Matrix44.Companion</span><span class="symbol">.</span><span class="identifier">rotateZ</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.transforms$rotateZ(org.openrndr.math.Matrix44.Companion, kotlin.Double)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../org.openrndr.math.transforms/scale.html">scale</a></h4>
+</td>
+<td>
+<p>Create a scaling matrix with the given vector</p>
+<code><span class="keyword">fun </span><span class="identifier">Matrix44.Companion</span><span class="symbol">.</span><span class="identifier">scale</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.transforms$scale(org.openrndr.math.Matrix44.Companion, org.openrndr.math.Vector3)/scaleFactor">scaleFactor</span><span class="symbol">:</span>&nbsp;<a href="../-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code>
+<p>Create a scaling matrix with the given components</p>
+<code><span class="keyword">fun </span><span class="identifier">Matrix44.Companion</span><span class="symbol">.</span><span class="identifier">scale</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.transforms$scale(org.openrndr.math.Matrix44.Companion, kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.transforms$scale(org.openrndr.math.Matrix44.Companion, kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.transforms$scale(org.openrndr.math.Matrix44.Companion, kotlin.Double, kotlin.Double, kotlin.Double)/z">z</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../org.openrndr.math.transforms/translate.html">translate</a></h4>
+</td>
+<td>
+<p>Create a translate matrix with the given vector</p>
+<code><span class="keyword">fun </span><span class="identifier">Matrix44.Companion</span><span class="symbol">.</span><span class="identifier">translate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.transforms$translate(org.openrndr.math.Matrix44.Companion, org.openrndr.math.Vector3)/translation">translation</span><span class="symbol">:</span>&nbsp;<a href="../-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code>
+<p>Create a scaling matrix with the given components</p>
+<code><span class="keyword">fun </span><span class="identifier">Matrix44.Companion</span><span class="symbol">.</span><span class="identifier">translate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.math.transforms$translate(org.openrndr.math.Matrix44.Companion, kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.transforms$translate(org.openrndr.math.Matrix44.Companion, kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.math.transforms$translate(org.openrndr.math.Matrix44.Companion, kotlin.Double, kotlin.Double, kotlin.Double)/z">z</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

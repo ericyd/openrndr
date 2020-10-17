@@ -1,0 +1,231 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RenderTarget - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">RenderTarget</a><br/>
+<br/>
+<h1>RenderTarget</h1>
+<code><span class="keyword">interface </span><span class="identifier">RenderTarget</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/RenderTarget.kt#L77">(source)</a>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="color-attachments.html">colorAttachments</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">colorAttachments</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-color-attachment/index.html"><span class="identifier">ColorAttachment</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="content-scale.html">contentScale</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">contentScale</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="depth-buffer.html">depthBuffer</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">depthBuffer</span><span class="symbol">: </span><a href="../-depth-buffer/index.html"><span class="identifier">DepthBuffer</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="effective-height.html">effectiveHeight</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">effectiveHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="effective-width.html">effectiveWidth</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">effectiveWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-color-attachments.html">hasColorAttachments</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">hasColorAttachments</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-depth-buffer.html">hasDepthBuffer</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">hasDepthBuffer</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="height.html">height</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="multisample.html">multisample</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">multisample</span><span class="symbol">: </span><a href="../-buffer-multisample/index.html"><span class="identifier">BufferMultisample</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="session.html">session</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">session</span><span class="symbol">: </span><a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="width.html">width</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attach.html">attach</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attach</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ColorBuffer, kotlin.Int, kotlin.String)/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ColorBuffer, kotlin.Int, kotlin.String)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ColorBuffer, kotlin.Int, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attach</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.DepthBuffer)/depthBuffer">depthBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-depth-buffer/index.html"><span class="identifier">DepthBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attach</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ArrayTexture, kotlin.Int, kotlin.Int, kotlin.String)/arrayTexture">arrayTexture</span><span class="symbol">:</span>&nbsp;<a href="../-array-texture/index.html"><span class="identifier">ArrayTexture</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ArrayTexture, kotlin.Int, kotlin.Int, kotlin.String)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ArrayTexture, kotlin.Int, kotlin.Int, kotlin.String)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ArrayTexture, kotlin.Int, kotlin.Int, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attach</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ArrayCubemap, org.openrndr.draw.CubemapSide, kotlin.Int, kotlin.Int, kotlin.String)/arrayCubemap">arrayCubemap</span><span class="symbol">:</span>&nbsp;<a href="../-array-cubemap/index.html"><span class="identifier">ArrayCubemap</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ArrayCubemap, org.openrndr.draw.CubemapSide, kotlin.Int, kotlin.Int, kotlin.String)/side">side</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap-side/index.html"><span class="identifier">CubemapSide</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ArrayCubemap, org.openrndr.draw.CubemapSide, kotlin.Int, kotlin.Int, kotlin.String)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ArrayCubemap, org.openrndr.draw.CubemapSide, kotlin.Int, kotlin.Int, kotlin.String)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.ArrayCubemap, org.openrndr.draw.CubemapSide, kotlin.Int, kotlin.Int, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attach</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.Cubemap, org.openrndr.draw.CubemapSide, kotlin.Int, kotlin.String)/cubemap">cubemap</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap/index.html"><span class="identifier">Cubemap</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.Cubemap, org.openrndr.draw.CubemapSide, kotlin.Int, kotlin.String)/side">side</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap-side/index.html"><span class="identifier">CubemapSide</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.Cubemap, org.openrndr.draw.CubemapSide, kotlin.Int, kotlin.String)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.Cubemap, org.openrndr.draw.CubemapSide, kotlin.Int, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attach</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.VolumeTexture, kotlin.Int, kotlin.Int, kotlin.String)/volumeTexture">volumeTexture</span><span class="symbol">:</span>&nbsp;<a href="../-volume-texture/index.html"><span class="identifier">VolumeTexture</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.VolumeTexture, kotlin.Int, kotlin.Int, kotlin.String)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.VolumeTexture, kotlin.Int, kotlin.Int, kotlin.String)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attach(org.openrndr.draw.VolumeTexture, kotlin.Int, kotlin.Int, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="attach-layered.html">attachLayered</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attachLayered</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.ArrayTexture, kotlin.Int, kotlin.String)/arrayTexture">arrayTexture</span><span class="symbol">:</span>&nbsp;<a href="../-array-texture/index.html"><span class="identifier">ArrayTexture</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.ArrayTexture, kotlin.Int, kotlin.String)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.ArrayTexture, kotlin.Int, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attachLayered</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.ArrayCubemap, kotlin.Int, kotlin.String)/arrayCubemap">arrayCubemap</span><span class="symbol">:</span>&nbsp;<a href="../-array-cubemap/index.html"><span class="identifier">ArrayCubemap</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.ArrayCubemap, kotlin.Int, kotlin.String)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.ArrayCubemap, kotlin.Int, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attachLayered</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.Cubemap, kotlin.Int, kotlin.String)/cubemap">cubemap</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap/index.html"><span class="identifier">Cubemap</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.Cubemap, kotlin.Int, kotlin.String)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.Cubemap, kotlin.Int, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attachLayered</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.VolumeTexture, kotlin.Int, kotlin.String)/volumeTexture">volumeTexture</span><span class="symbol">:</span>&nbsp;<a href="../-volume-texture/index.html"><span class="identifier">VolumeTexture</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.VolumeTexture, kotlin.Int, kotlin.String)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$attachLayered(org.openrndr.draw.VolumeTexture, kotlin.Int, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="bind.html">bind</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="blend-mode.html">blendMode</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">blendMode</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$blendMode(kotlin.Int, org.openrndr.draw.BlendMode)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$blendMode(kotlin.Int, org.openrndr.draw.BlendMode)/blendMode">blendMode</span><span class="symbol">:</span>&nbsp;<a href="../-blend-mode/index.html"><span class="identifier">BlendMode</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-color.html">clearColor</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">clearColor</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$clearColor(kotlin.Int, org.openrndr.color.ColorRGBa)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$clearColor(kotlin.Int, org.openrndr.color.ColorRGBa)/color">color</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-depth.html">clearDepth</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">clearDepth</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$clearDepth(kotlin.Double, kotlin.Int)/depth">depth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.RenderTarget$clearDepth(kotlin.Double, kotlin.Int)/stencil">stencil</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="color-attachment-by-name.html">colorAttachmentByName</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">colorAttachmentByName</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$colorAttachmentByName(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-color-attachment/index.html"><span class="identifier">ColorAttachment</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="color-attachment-index-by-name.html">colorAttachmentIndexByName</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">colorAttachmentIndexByName</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$colorAttachmentIndexByName(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="color-buffer.html">colorBuffer</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">colorBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$colorBuffer(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="destroy.html">destroy</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="detach-color-attachments.html">detachColorAttachments</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">detachColorAttachments</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="detach-depth-buffer.html">detachDepthBuffer</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">detachDepthBuffer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resolve-to.html">resolveTo</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">resolveTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.RenderTarget$resolveTo(org.openrndr.draw.RenderTarget)/to">to</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unbind.html">unbind</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">unbind</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="active.html">active</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">active</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">RenderTarget</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-program-render-target/index.html">ProgramRenderTarget</a></h4>
+</td>
+<td>
+<p>A render target that wraps around the back-buffer</p>
+<code><span class="keyword">interface </span><span class="identifier">ProgramRenderTarget</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">RenderTarget</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

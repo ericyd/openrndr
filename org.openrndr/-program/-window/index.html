@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Program.Window - openrndr</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../../index.html">org.openrndr</a>&nbsp;/&nbsp;<a href="../index.html">Program</a>&nbsp;/&nbsp;<a href="./index.html">Window</a><br/>
+<br/>
+<h1>Window</h1>
+<code><span class="keyword">inner</span> <span class="keyword">class </span><span class="identifier">Window</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/Program.kt#L150">(source)</a>
+<p>Simplified window interface</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Simplified window interface</p>
+<code><span class="identifier">Window</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="closed.html">closed</a></h4>
+</td>
+<td>
+<p>Window restored (from minimization) event</p>
+<code><span class="keyword">val </span><span class="identifier">closed</span><span class="symbol">: </span><a href="../../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../../-window-event/index.html"><span class="identifier">WindowEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="drop.html">drop</a></h4>
+</td>
+<td>
+<p>Drop event, triggered when a file is dropped on the window</p>
+<code><span class="keyword">val </span><span class="identifier">drop</span><span class="symbol">: </span><a href="../../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../../-drop-event/index.html"><span class="identifier">DropEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="focused.html">focused</a></h4>
+</td>
+<td>
+<p>Window focused event, triggered when the window receives focus</p>
+<code><span class="keyword">val </span><span class="identifier">focused</span><span class="symbol">: </span><a href="../../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../../-window-event/index.html"><span class="identifier">WindowEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="minimized.html">minimized</a></h4>
+</td>
+<td>
+<p>Window minimized event</p>
+<code><span class="keyword">val </span><span class="identifier">minimized</span><span class="symbol">: </span><a href="../../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../../-window-event/index.html"><span class="identifier">WindowEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="moved.html">moved</a></h4>
+</td>
+<td>
+<p>Window moved event</p>
+<code><span class="keyword">val </span><span class="identifier">moved</span><span class="symbol">: </span><a href="../../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../../-window-event/index.html"><span class="identifier">WindowEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="position.html">position</a></h4>
+</td>
+<td>
+<p>Window position</p>
+<code><span class="keyword">var </span><span class="identifier">position</span><span class="symbol">: </span><a href="../../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="presentation-mode.html">presentationMode</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">presentationMode</span><span class="symbol">: </span><a href="../../-presentation-mode/index.html"><span class="identifier">PresentationMode</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="restored.html">restored</a></h4>
+</td>
+<td>
+<p>Window restored (from minimization) event</p>
+<code><span class="keyword">val </span><span class="identifier">restored</span><span class="symbol">: </span><a href="../../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../../-window-event/index.html"><span class="identifier">WindowEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scale.html">scale</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">scale</span><span class="symbol">: </span><a href="../../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="size.html">size</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">size</span><span class="symbol">: </span><a href="../../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sized.html">sized</a></h4>
+</td>
+<td>
+<p>Window sized event</p>
+<code><span class="keyword">val </span><span class="identifier">sized</span><span class="symbol">: </span><a href="../../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../../-window-event/index.html"><span class="identifier">WindowEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="title.html">title</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">title</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unfocused.html">unfocused</a></h4>
+</td>
+<td>
+<p>Window focused event, triggered when the window loses focus</p>
+<code><span class="keyword">val </span><span class="identifier">unfocused</span><span class="symbol">: </span><a href="../../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../../-window-event/index.html"><span class="identifier">WindowEvent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="request-draw.html">requestDraw</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requestDraw</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-focus.html">requestFocus</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requestFocus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

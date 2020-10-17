@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ColorBufferProxy - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">ColorBufferProxy</a><br/>
+<br/>
+<h1>ColorBufferProxy</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ColorBufferProxy</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/ColorBufferProxy.kt#L9">(source)</a>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-events/index.html">Events</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Events</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-proxy-event/index.html">ProxyEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ProxyEvent</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-state/index.html">State</a></h4>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">State</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">ColorBufferProxy</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ColorBufferProxy$<init>(kotlin.String, org.openrndr.internal.ColorBufferLoader, kotlin.Boolean)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBufferProxy$<init>(kotlin.String, org.openrndr.internal.ColorBufferLoader, kotlin.Boolean)/loader">loader</span><span class="symbol">:</span>&nbsp;<span class="identifier">ColorBufferLoader</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ColorBufferProxy$<init>(kotlin.String, org.openrndr.internal.ColorBufferLoader, kotlin.Boolean)/persistent">persistent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="color-buffer.html">colorBuffer</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">colorBuffer</span><span class="symbol">: </span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="events.html">events</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">events</span><span class="symbol">: </span><span class="identifier">Events</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="loader.html">loader</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">loader</span><span class="symbol">: </span><span class="identifier">ColorBufferLoader</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="persistent.html">persistent</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">persistent</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="state.html">state</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">state</span><span class="symbol">: </span><span class="identifier">State</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cancel.html">cancel</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">cancel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="queue.html">queue</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="retry.html">retry</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">retry</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="touch.html">touch</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">touch</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

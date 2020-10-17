@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Writer - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.text</a>&nbsp;/&nbsp;<a href="./index.html">Writer</a><br/>
+<br/>
+<h1>Writer</h1>
+<code><span class="keyword">class </span><span class="identifier">Writer</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/text/Writer.kt#L25">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Writer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.text.Writer$<init>(org.openrndr.draw.Drawer)/drawerRef">drawerRef</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">?</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="box.html">box</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">box</span><span class="symbol">: </span><a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cursor.html">cursor</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">cursor</span><span class="symbol">: </span><a href="../-cursor/index.html"><span class="identifier">Cursor</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="drawer-ref.html">drawerRef</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">drawerRef</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="draw-style.html">drawStyle</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">drawStyle</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-draw-style/index.html"><span class="identifier">DrawStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="ellipsis.html">ellipsis</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">ellipsis</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="leading.html">leading</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">leading</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="style.html">style</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">style</span><span class="symbol">: </span><a href="../-write-style/index.html"><span class="identifier">WriteStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="style-stack.html">styleStack</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">styleStack</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Stack.html"><span class="identifier">Stack</span></a><span class="symbol">&lt;</span><a href="../-write-style/index.html"><span class="identifier">WriteStyle</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tracking.html">tracking</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">tracking</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="gapless-new-line.html">gaplessNewLine</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">gaplessNewLine</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="move.html">move</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">move</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.text.Writer$move(kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.text.Writer$move(kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="new-line.html">newLine</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">newLine</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="text.html">text</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">text</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.text.Writer$text(kotlin.String, kotlin.Boolean)/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.text.Writer$text(kotlin.String, kotlin.Boolean)/visible">visible</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="text-width.html">textWidth</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">textWidth</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.text.Writer$textWidth(kotlin.String)/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

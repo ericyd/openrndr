@@ -1,0 +1,276 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ShapeContour - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.shape</a>&nbsp;/&nbsp;<a href="./index.html">ShapeContour</a><br/>
+<br/>
+<h1>ShapeContour</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ShapeContour</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/shape/Shape.kt#L880">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">ShapeContour</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$<init>(kotlin.collections.List((org.openrndr.shape.Segment)), kotlin.Boolean, org.openrndr.math.YPolarity)/segments">segments</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-segment/index.html"><span class="identifier">Segment</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.ShapeContour$<init>(kotlin.collections.List((org.openrndr.shape.Segment)), kotlin.Boolean, org.openrndr.math.YPolarity)/closed">closed</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.ShapeContour$<init>(kotlin.collections.List((org.openrndr.shape.Segment)), kotlin.Boolean, org.openrndr.math.YPolarity)/polarity">polarity</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-y-polarity/index.html"><span class="identifier">YPolarity</span></a>&nbsp;<span class="symbol">=</span>&nbsp;YPolarity.CW_NEGATIVE_Y<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="bounds.html">bounds</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">bounds</span><span class="symbol">: </span><a href="../-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clockwise.html">clockwise</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">clockwise</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="closed.html">closed</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">closed</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="counter-clockwise.html">counterClockwise</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">counterClockwise</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="empty.html">empty</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">empty</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="exploded.html">exploded</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">exploded</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="length.html">length</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">length</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="opened.html">opened</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">opened</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="polarity.html">polarity</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">polarity</span><span class="symbol">: </span><a href="../../org.openrndr.math/-y-polarity/index.html"><span class="identifier">YPolarity</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reversed.html">reversed</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">reversed</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="segments.html">segments</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">segments</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-segment/index.html"><span class="identifier">Segment</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shape.html">shape</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">shape</span><span class="symbol">: </span><a href="../-shape/index.html"><span class="identifier">Shape</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="triangulation.html">triangulation</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">triangulation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-triangle/index.html"><span class="identifier">Triangle</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="winding.html">winding</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">winding</span><span class="symbol">: </span><a href="../-winding/index.html"><span class="identifier">Winding</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="adaptive-positions.html">adaptivePositions</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">adaptivePositions</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$adaptivePositions(kotlin.Double)/distanceTolerance">distanceTolerance</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.5<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="adaptive-positions-and-direction.html">adaptivePositionsAndDirection</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">adaptivePositionsAndDirection</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$adaptivePositionsAndDirection(kotlin.Double)/distanceTolerance">distanceTolerance</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.5<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains.html">contains</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$contains(org.openrndr.math.Vector2)/point">point</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="equidistant-positions.html">equidistantPositions</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equidistantPositions</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$equidistantPositions(kotlin.Int)/pointCount">pointCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="nearest.html">nearest</a></h4>
+</td>
+<td>
+<p>Project a point on the contour</p>
+<code><span class="keyword">fun </span><span class="identifier">nearest</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$nearest(org.openrndr.math.Vector2)/point">point</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-contour-point/index.html"><span class="identifier">ContourPoint</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="normal.html">normal</a></h4>
+</td>
+<td>
+<p>Evaluates the contour for the given position</p>
+<code><span class="keyword">fun </span><span class="identifier">normal</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$normal(kotlin.Double)/ut">ut</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="offset.html">offset</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">offset</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$offset(kotlin.Double, org.openrndr.shape.SegmentJoin)/distance">distance</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.ShapeContour$offset(kotlin.Double, org.openrndr.shape.SegmentJoin)/joinType">joinType</span><span class="symbol">:</span>&nbsp;<a href="../-segment-join/index.html"><span class="identifier">SegmentJoin</span></a>&nbsp;<span class="symbol">=</span>&nbsp;SegmentJoin.ROUND<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on.html">on</a></h4>
+</td>
+<td>
+<p>Checks if a give point lies on the contour</p>
+<code><span class="keyword">fun </span><span class="identifier">on</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$on(org.openrndr.math.Vector2, kotlin.Double)/point">point</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.ShapeContour$on(org.openrndr.math.Vector2, kotlin.Double)/error">error</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;5.0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="plus.html">plus</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$plus(org.openrndr.shape.ShapeContour)/other">other</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pose.html">pose</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">pose</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$pose(kotlin.Double)/t">t</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="position.html">position</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">position</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$position(kotlin.Double)/ut">ut</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sample-equidistant.html">sampleEquidistant</a></h4>
+</td>
+<td>
+<p>Sample the shape contour into line segments</p>
+<code><span class="keyword">fun </span><span class="identifier">sampleEquidistant</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$sampleEquidistant(kotlin.Int)/pointCount">pointCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sample-linear.html">sampleLinear</a></h4>
+</td>
+<td>
+<p>Adaptively sample the contour into line segments while still approximating the original contour</p>
+<code><span class="keyword">fun </span><span class="identifier">sampleLinear</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$sampleLinear(kotlin.Double)/distanceTolerance">distanceTolerance</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.5<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sub.html">sub</a></h4>
+</td>
+<td>
+<p>Sample a sub contour</p>
+<code><span class="keyword">fun </span><span class="identifier">sub</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$sub(kotlin.Double, kotlin.Double)/startT">startT</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.ShapeContour$sub(kotlin.Double, kotlin.Double)/endT">endT</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="t-for-length.html">tForLength</a></h4>
+</td>
+<td>
+<p>Estimate t parameter value for a given length</p>
+<code><span class="keyword">fun </span><span class="identifier">tForLength</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$tForLength(kotlin.Double)/length">length</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="transform.html">transform</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">transform</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour$transform(org.openrndr.math.Matrix44)/transform">transform</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-e-m-p-t-y.html">EMPTY</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">EMPTY</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="from-points.html">fromPoints</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromPoints</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.ShapeContour.Companion$fromPoints(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.Boolean, org.openrndr.math.YPolarity)/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.ShapeContour.Companion$fromPoints(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.Boolean, org.openrndr.math.YPolarity)/closed">closed</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.ShapeContour.Companion$fromPoints(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.Boolean, org.openrndr.math.YPolarity)/polarity">polarity</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-y-polarity/index.html"><span class="identifier">YPolarity</span></a>&nbsp;<span class="symbol">=</span>&nbsp;YPolarity.CW_NEGATIVE_Y<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ShapeContour</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

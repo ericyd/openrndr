@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>org.openrndr.svg - openrndr</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">openrndr</a>&nbsp;/&nbsp;<a href="./index.html">org.openrndr.svg</a><br/>
+<br/>
+<h2>Package org.openrndr.svg</h2>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="expand-to-two-digits-per-component.html">expandToTwoDigitsPerComponent</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">expandToTwoDigitsPerComponent</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.svg$expandToTwoDigitsPerComponent(kotlin.String)/hexValue">hexValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-s-v-g.html">loadSVG</a></h4>
+</td>
+<td>
+<p>Load a <a href="../org.openrndr.shape/-composition/index.html">Composition</a> from a filename, url or svg string</p>
+<code><span class="keyword">fun </span><span class="identifier">loadSVG</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.svg$loadSVG(kotlin.String)/fileOrUrlOrSvg">fileOrUrlOrSvg</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../org.openrndr.shape/-composition/index.html"><span class="identifier">Composition</span></a></code>
+<p>Load a <a href="../org.openrndr.shape/-composition/index.html">Composition</a> from a file, url or svg string</p>
+<code><span class="keyword">fun </span><span class="identifier">loadSVG</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.svg$loadSVG(java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../org.openrndr.shape/-composition/index.html"><span class="identifier">Composition</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="normalize-color-hex.html">normalizeColorHex</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">normalizeColorHex</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.svg$normalizeColorHex(kotlin.String)/colorHex">colorHex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parse-s-v-g.html">parseSVG</a></h4>
+</td>
+<td>
+<p>Parses an svg document and creates a <a href="../org.openrndr.shape/-composition/index.html">Composition</a></p>
+<code><span class="keyword">fun </span><span class="identifier">parseSVG</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.svg$parseSVG(kotlin.String)/svgString">svgString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../org.openrndr.shape/-composition/index.html"><span class="identifier">Composition</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="save-to-file.html">saveToFile</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="../org.openrndr.shape/-composition/index.html"><span class="identifier">Composition</span></a><span class="symbol">.</span><span class="identifier">saveToFile</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.svg$saveToFile(org.openrndr.shape.Composition, java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-s-v-g.html">toSVG</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="../org.openrndr.shape/-composition/index.html"><span class="identifier">Composition</span></a><span class="symbol">.</span><span class="identifier">toSVG</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="write-s-v-g.html">writeSVG</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeSVG</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.svg$writeSVG(org.openrndr.shape.Composition, kotlin.String)/composition">composition</span><span class="symbol">:</span>&nbsp;<a href="../org.openrndr.shape/-composition/index.html"><span class="identifier">Composition</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.svg$writeSVG(org.openrndr.shape.Composition, kotlin.String)/topLevelId">topLevelId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"openrndr-svg"<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

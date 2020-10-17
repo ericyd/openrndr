@@ -1,0 +1,47 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:org.openrndr.collections$pflatMap(kotlin.collections.Iterable((org.openrndr.collections.pflatMap.T)), kotlin.coroutines.SuspendFunction1((org.openrndr.collections.pflatMap.T, kotlin.collections.Iterable((org.openrndr.collections.pflatMap.R)))))org.openrndr.collections/kotlin.collections.-iterable/pflat-map.html
+$dokka.location:org.openrndr.collections$pforEach(kotlin.collections.Iterable((org.openrndr.collections.pforEach.T)), kotlin.coroutines.SuspendFunction1((org.openrndr.collections.pforEach.T, org.openrndr.collections.pforEach.R)))org.openrndr.collections/kotlin.collections.-iterable/pfor-each.html
+$dokka.location:org.openrndr.collections$pmap(kotlin.collections.Iterable((org.openrndr.collections.pmap.T)), kotlin.coroutines.SuspendFunction1((org.openrndr.collections.pmap.T, org.openrndr.collections.pmap.R)))org.openrndr.collections/kotlin.collections.-iterable/pmap.html
+$dokka.location:org.openrndr.collections$pmapNotNull(kotlin.collections.Iterable((org.openrndr.collections.pmapNotNull.T)), kotlin.coroutines.SuspendFunction1((org.openrndr.collections.pmapNotNull.T, org.openrndr.collections.pmapNotNull.R)))org.openrndr.collections/kotlin.collections.-iterable/pmap-not-null.html
+$dokka.location:org.openrndr.math$mod_(kotlin.Double, kotlin.Double)org.openrndr.math/kotlin.-double/mod_.html
+$dokka.location:org.openrndr.math$mod_(kotlin.Float, kotlin.Float)org.openrndr.math/kotlin.-float/mod_.html
+$dokka.location:org.openrndr.math$mod_(kotlin.Int, kotlin.Int)org.openrndr.math/kotlin.-int/mod_.html
+$dokka.location:org.openrndr.math$mod_(kotlin.Long, kotlin.Long)org.openrndr.math/kotlin.-long/mod_.html
+$dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Matrix33)org.openrndr.math/kotlin.-double/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Matrix44)org.openrndr.math/kotlin.-double/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Vector2)org.openrndr.math/kotlin.-double/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Vector3)org.openrndr.math/kotlin.-double/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Vector4)org.openrndr.math/kotlin.-double/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Int, org.openrndr.math.IntVector2)org.openrndr.math/kotlin.-int/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Int, org.openrndr.math.IntVector3)org.openrndr.math/kotlin.-int/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Int, org.openrndr.math.IntVector4)org.openrndr.math/kotlin.-int/times.html
+$dokka.location:org.openrndr.math.transforms$transform(kotlin.reflect.KMutableProperty0((org.openrndr.math.Matrix44)), kotlin.Function1((org.openrndr.math.transforms.TransformBuilder, kotlin.Unit)))org.openrndr.math.transforms/kotlin.reflect.-k-mutable-property0/transform.html
+$dokka.location:org.openrndr.shape$=(kotlin.reflect.KMutableProperty0((org.openrndr.shape.CompositionColor)), org.openrndr.color.ColorRGBa)org.openrndr.shape/kotlin.reflect.-k-mutable-property0/=.html
+$dokka.location:org.openrndr.shape$=(kotlin.reflect.KMutableProperty0((org.openrndr.shape.CompositionShadeStyle)), org.openrndr.draw.ShadeStyle)org.openrndr.shape/kotlin.reflect.-k-mutable-property0/=.html
+$dokka.location:org.openrndr.shape$=(kotlin.reflect.KMutableProperty0((org.openrndr.shape.CompositionStrokeWeight)), kotlin.Double)org.openrndr.shape/kotlin.reflect.-k-mutable-property0/=.html
+$dokka.location:org.openrndr.shape$compound#kotlin.collections.List((org.openrndr.shape.Shape))org.openrndr.shape/kotlin.collections.-list/compound.html
+$dokka.location:org.openrndr.shape$cumsum(kotlin.collections.List((kotlin.Int)))org.openrndr.shape/kotlin.collections.-list/cumsum.html
+$dokka.location:org.openrndr.shape$merge(kotlin.collections.List((kotlin.Double)), kotlin.Function2((kotlin.Double, , kotlin.Boolean)))org.openrndr.shape/kotlin.collections.-list/merge.html
+$dokka.location:org.openrndr.shape$merge(kotlin.collections.List((org.openrndr.shape.ShapeNodeIntersection)), kotlin.Double)org.openrndr.shape/kotlin.collections.-list/merge.html
+$dokka.location:org.openrndr.shape$setValue(kotlin.reflect.KMutableProperty0((org.openrndr.shape.CompositionShadeStyle)), kotlin.Any, kotlin.reflect.KProperty((kotlin.Any)), org.openrndr.draw.ShadeStyle)org.openrndr.shape/kotlin.reflect.-k-mutable-property0/set-value.html
+$dokka.location:org.openrndr.shape$shape#kotlin.collections.List((org.openrndr.shape.ShapeContour))org.openrndr.shape/kotlin.collections.-list/shape.html
+org.openrndr
+org.openrndr.animatable
+org.openrndr.animatable.easing
+org.openrndr.binpack
+org.openrndr.collections
+org.openrndr.color
+org.openrndr.dialogs
+org.openrndr.draw
+org.openrndr.events
+org.openrndr.exceptions
+org.openrndr.extensions
+org.openrndr.filter.color
+org.openrndr.math
+org.openrndr.math.transforms
+org.openrndr.platform
+org.openrndr.shape
+org.openrndr.svg
+org.openrndr.text
+org.openrndr.utils

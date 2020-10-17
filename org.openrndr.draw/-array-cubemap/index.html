@@ -1,0 +1,153 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ArrayCubemap - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">ArrayCubemap</a><br/>
+<br/>
+<h1>ArrayCubemap</h1>
+<code><span class="keyword">interface </span><span class="identifier">ArrayCubemap</span></code> <a href="https://github.com/openrndr/openrndr/blob/master/openrndr-core/src/main/kotlin/openrndr-core/src/main/kotlin/org/openrndr/draw/ArrayCubemap.kt#L8">(source)</a>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="bounds.html">bounds</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">bounds</span><span class="symbol">: </span><a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="filter-mag.html">filterMag</a></h4>
+</td>
+<td>
+<p>the filter to use when displaying at sizes larger than the original</p>
+<code><span class="keyword">abstract</span> <span class="keyword">var </span><span class="identifier">filterMag</span><span class="symbol">: </span><a href="../-magnifying-filter/index.html"><span class="identifier">MagnifyingFilter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="filter-min.html">filterMin</a></h4>
+</td>
+<td>
+<p>the filter to use when displaying at sizes smaller than the original</p>
+<code><span class="keyword">abstract</span> <span class="keyword">var </span><span class="identifier">filterMin</span><span class="symbol">: </span><a href="../-minifying-filter/index.html"><span class="identifier">MinifyingFilter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="flip-v.html">flipV</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">var </span><span class="identifier">flipV</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="format.html">format</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">format</span><span class="symbol">: </span><a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="layers.html">layers</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">layers</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="levels.html">levels</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">levels</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="session.html">session</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">session</span><span class="symbol">: </span><a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="type.html">type</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="../-color-type/index.html"><span class="identifier">ColorType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="width.html">width</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="bind.html">bind</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$bind(kotlin.Int)/unit">unit</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="copy-to.html">copyTo</a></h4>
+</td>
+<td>
+<p>Copy contents in layer to target ColorBuffer</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">copyTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$copyTo(kotlin.Int, org.openrndr.draw.Cubemap, kotlin.Int, kotlin.Int)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$copyTo(kotlin.Int, org.openrndr.draw.Cubemap, kotlin.Int, kotlin.Int)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap/index.html"><span class="identifier">Cubemap</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$copyTo(kotlin.Int, org.openrndr.draw.Cubemap, kotlin.Int, kotlin.Int)/fromLevel">fromLevel</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$copyTo(kotlin.Int, org.openrndr.draw.Cubemap, kotlin.Int, kotlin.Int)/toLevel">toLevel</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">copyTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$copyTo(kotlin.Int, org.openrndr.draw.ArrayCubemap, kotlin.Int, kotlin.Int, kotlin.Int)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$copyTo(kotlin.Int, org.openrndr.draw.ArrayCubemap, kotlin.Int, kotlin.Int, kotlin.Int)/target">target</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ArrayCubemap</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$copyTo(kotlin.Int, org.openrndr.draw.ArrayCubemap, kotlin.Int, kotlin.Int, kotlin.Int)/targetLayer">targetLayer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$copyTo(kotlin.Int, org.openrndr.draw.ArrayCubemap, kotlin.Int, kotlin.Int, kotlin.Int)/fromLevel">fromLevel</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$copyTo(kotlin.Int, org.openrndr.draw.ArrayCubemap, kotlin.Int, kotlin.Int, kotlin.Int)/toLevel">toLevel</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="destroy.html">destroy</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="generate-mipmaps.html">generateMipmaps</a></h4>
+</td>
+<td>
+<p>generates mipmaps from the top-level mipmap</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">generateMipmaps</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read.html">read</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">read</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$read(kotlin.Int, java.nio.ByteBuffer, kotlin.Int)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$read(kotlin.Int, java.nio.ByteBuffer, kotlin.Int)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$read(kotlin.Int, java.nio.ByteBuffer, kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="write.html">write</a></h4>
+</td>
+<td>
+<p>Write to a single layer in the array texture</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$write(org.openrndr.draw.CubemapSide, kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/side">side</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap-side/index.html"><span class="identifier">CubemapSide</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$write(org.openrndr.draw.CubemapSide, kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$write(org.openrndr.draw.CubemapSide, kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$write(org.openrndr.draw.CubemapSide, kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/sourceFormat">sourceFormat</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;format<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$write(org.openrndr.draw.CubemapSide, kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/sourceType">sourceType</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;type<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ArrayCubemap$write(org.openrndr.draw.CubemapSide, kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../image-binding.html">imageBinding</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">ArrayCubemap</span></a><span class="symbol">.</span><span class="identifier">imageBinding</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$imageBinding(org.openrndr.draw.ArrayCubemap, kotlin.Int, org.openrndr.draw.ImageAccess)/level">level</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$imageBinding(org.openrndr.draw.ArrayCubemap, kotlin.Int, org.openrndr.draw.ImageAccess)/imageAccess">imageAccess</span><span class="symbol">:</span>&nbsp;<a href="../-image-access/index.html"><span class="identifier">ImageAccess</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-array-cubemap-image-binding/index.html"><span class="identifier">ArrayCubemapImageBinding</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
